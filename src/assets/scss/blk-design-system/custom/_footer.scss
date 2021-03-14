@@ -1,0 +1,138 @@
+.footer {
+  --angle: 0deg;
+  border-top: 2px solid transparent;
+  border-image: conic-gradient(from var(--angle), #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82, #07b39b, #1098ad, #5073b8, #a166ab, #ef4e7b, #f37055) 1;
+  animation: 10s rotate linear infinite;
+  background-size: 300% 300%;
+  position: relative;
+
+  [class*="container-"] {
+    padding: 0;
+  }
+
+  .nav {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+    padding-top: 25px;
+    list-style: none;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .nav-link {
+    color: $white;
+    padding: 10px 0;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .title {
+    text-align: left !important;
+  }
+
+  .copyright {
+    font-size: $font-size-sm;
+    line-height: 1.8;
+    color: $white;
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: " ";
+  }
+}
+
+.footer-overlay {
+  padding: 50px 0;
+  position: static;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 75%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    padding-left: 0px;
+
+    .copyright {
+      text-align: right;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    .copyright {
+      float: right;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    nav {
+      display: block;
+      margin-bottom: 5px;
+      float: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    text-align: center;
+    .copyright {
+      text-align: center;
+    }
+
+    .nav {
+      float: none;
+      padding-left: 0;
+    }
+  }
+}
