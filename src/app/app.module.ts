@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {CustomersComponent} from './components/customers/customers.component';
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@angular/common';
 @NgModule({
   declarations: [
       AppComponent,
@@ -38,7 +39,7 @@ import {CustomersComponent} from './components/customers/customers.component';
     // CarouselModule.forRoot(),
     // ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

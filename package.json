@@ -1,5 +1,5 @@
 {
-  "name": "blk-design-system-angular",
+  "name": "v12-brasil",
   "version": "1.2.0",
   "scripts": {
     "ng": "ng",
@@ -13,55 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-angular.git"
+    "url": ""
   },
   "keywords": [
-    "design system",
-    "angular design system",
-    "bootstrap 4 design system",
-    "angular design system",
-    "bootstrap 4 design",
-    "angular design",
-    "bootstrap 4 system",
-    "angular system",
-    "angular",
-    "bootstrap 4 ui kit",
-    "angular uit kit",
-    "bootstrap 4 kit",
-    "angular kit",
-    "blk",
-    "black",
-    "black angular",
-    "black kit",
-    "blk ui kit",
-    "blk angular ui kit",
-    "creative tim",
-    "creative tim angular",
-    "html kit",
-    "angular kit",
-    "html css template",
-    "angular css template",
-    "web template",
-    "angular template",
-    "bootstrap",
-    "bootstrap 4",
-    "css3 template",
-    "frontend",
-    "angular frontend",
-    "responsive bootstrap template",
-    "responsive angular template",
-    "bootstrap ui kit",
-    "responsive ui kit",
-    "responsive angular ui kit",
-    "blk design system",
-    "blk design system angular"
+    "v12 brasil",
+    "v12 marketing digital",
+    "v12 campinas marketing digital",
+    "v12 marketing digital",
+    "v12 SEO",
+    "v12 SEO e marketing digital"
   ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "Thiago Kemp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-angular/issues"
+    "url": "https://www.v12brasil.com.br"
   },
-  "homepage": "https://demos.creative-tim.com/blk-design-system-angular/",
+  "homepage": "https://www.v12brasil.com.br",
   "private": false,
   "dependencies": {
     "@angular/animations": "11.0.5",
