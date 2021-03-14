@@ -1,0 +1,117 @@
+/*
+=========================================================
+* BLK Design System Angular - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/blk-design-system-angular
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+
+// Core
+
+@import "v12-seo/custom/functions";
+@import "v12-seo/bootstrap/functions";
+
+@import "v12-seo/custom/variables";
+@import "v12-seo/bootstrap/variables";
+
+@import "v12-seo/custom/mixins";
+@import "v12-seo/bootstrap/mixins";
+
+// Bootstrap components
+
+@import "v12-seo/bootstrap/root";
+@import "v12-seo/bootstrap/reboot";
+@import "v12-seo/bootstrap/type";
+@import "v12-seo/bootstrap/images";
+@import "v12-seo/bootstrap/code";
+@import "v12-seo/bootstrap/grid";
+@import "v12-seo/bootstrap/tables";
+@import "v12-seo/bootstrap/forms";
+@import "v12-seo/bootstrap/buttons";
+@import "v12-seo/bootstrap/transitions";
+@import "v12-seo/bootstrap/dropdown";
+@import "v12-seo/bootstrap/button-group";
+@import "v12-seo/bootstrap/input-group";
+@import "v12-seo/bootstrap/custom-forms";
+@import "v12-seo/bootstrap/nav";
+@import "v12-seo/bootstrap/navbar";
+@import "v12-seo/bootstrap/card";
+@import "v12-seo/bootstrap/breadcrumb";
+@import "v12-seo/bootstrap/pagination";
+@import "v12-seo/bootstrap/badge";
+@import "v12-seo/bootstrap/jumbotron";
+@import "v12-seo/bootstrap/alert";
+@import "v12-seo/bootstrap/progress";
+@import "v12-seo/bootstrap/media";
+@import "v12-seo/bootstrap/list-group";
+@import "v12-seo/bootstrap/close";
+@import "v12-seo/bootstrap/modal";
+@import "v12-seo/bootstrap/tooltip";
+@import "v12-seo/bootstrap/popover";
+@import "v12-seo/bootstrap/carousel";
+@import "v12-seo/bootstrap/utilities";
+@import "v12-seo/bootstrap/print";
+
+// Custom components
+
+@import "v12-seo/custom/alerts.scss";
+@import "v12-seo/custom/buttons.scss";
+@import "v12-seo/custom/dropdown.scss";
+@import "v12-seo/custom/footer.scss";
+@import "v12-seo/custom/forms.scss";
+@import "v12-seo/custom/images.scss";
+@import "v12-seo/custom/modal.scss";
+@import "v12-seo/custom/navbar.scss";
+@import "v12-seo/custom/type.scss";
+@import "v12-seo/custom/icons.scss";
+@import "v12-seo/custom/tables";
+@import "v12-seo/custom/checkboxes-radio";
+@import "v12-seo/custom/fixed-plugin";
+@import "v12-seo/custom/pagination.scss";
+@import "v12-seo/custom/misc.scss";
+@import "v12-seo/custom/rtl.scss";
+@import "v12-seo/custom/input-group.scss";
+@import "v12-seo/custom/example-pages.scss";
+@import "v12-seo/custom/progress.scss";
+@import "v12-seo/custom/badge.scss";
+@import "v12-seo/custom/pills.scss";
+@import "v12-seo/custom/tabs.scss";
+@import "v12-seo/custom/info-areas.scss";
+
+// Sections
+@import "v12-seo/custom/sections.scss";
+
+// Vendor / Plugins
+
+@import "v12-seo/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "v12-seo/custom/vendor/plugin-animate-bootstrap-notify.scss";
+@import "v12-seo/custom/vendor/plugin-bootstrap-switch.scss";
+@import "v12-seo/custom/vendor/plugin-nouislider.scss";
+@import "v12-seo/custom/vendor/plugin-datetimepicker.scss";
+
+// Cards
+
+@import "v12-seo/custom/card";
+@import "v12-seo/custom/cards/card-chart";
+@import "v12-seo/custom/cards/card-map";
+@import "v12-seo/custom/cards/card-user";
+@import "v12-seo/custom/cards/card-task";
+@import "v12-seo/custom/cards/card-plain";
+@import "v12-seo/custom/cards/card-register";
+@import "v12-seo/custom/cards/card-stats";
+@import "v12-seo/custom/cards/card-chart";
+
+// Angular changes
+@import "v12-seo/angular/tabs";
+@import "v12-seo/angular/pills";
+@import "v12-seo/angular/alerts";
+@import "v12-seo/angular/datepicker";
+@import "v12-seo/angular/example-pages";
