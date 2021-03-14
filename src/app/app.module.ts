@@ -23,7 +23,6 @@ import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import {BrowserModule, Title} from '@angular/platform-browser';
-import {WindowRef} from './services/window.service';
 
 @NgModule({
     declarations: [
