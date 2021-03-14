@@ -1,17 +1,18 @@
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { PagesModule } from './pages/pages.module';
-import { CollapseModule } from 'ngx-bootstrap/collapse';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {Inject, NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {HttpClientModule} from '@angular/common/http';
+import {PLATFORM_ID} from '@angular/core';
+import {PagesModule} from './pages/pages.module';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {NavbarComponent} from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { CustomersComponent } from './components/customers/customers.component';
-import { LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {FooterComponent} from './components/footer/footer.component';
+import {ContactComponent} from './components/contact/contact.component';
+import {CustomersComponent} from './components/customers/customers.component';
+import {isPlatformBrowser, isPlatformServer, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {TooltipModule} from 'ngx-bootstrap/tooltip';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {ProgressbarModule} from 'ngx-bootstrap/progressbar';
@@ -21,37 +22,47 @@ import {AlertModule} from 'ngx-bootstrap/alert';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 import {ModalModule} from 'ngx-bootstrap/modal';
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
+import {WindowRef} from './services/window.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    ContactComponent,
-    CustomersComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule,
-    AppRoutingModule,
-    CollapseModule,
-    PagesModule,
-    BsDropdownModule.forRoot(),
-    ProgressbarModule.forRoot(),
-    TooltipModule.forRoot(),
-    CollapseModule.forRoot(),
-    TabsModule.forRoot(),
-    PaginationModule.forRoot(),
-    AlertModule.forRoot(),
-    BsDatepickerModule.forRoot(),
-    CarouselModule.forRoot(),
-    ModalModule.forRoot()
-  ],
-  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        ContactComponent,
+        CustomersComponent,
+        FooterComponent
+    ],
+    imports: [
+        BrowserModule.withServerTransition({appId: 'serverApp'}),
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientModule,
+        RouterModule,
+        AppRoutingModule,
+        CollapseModule,
+        PagesModule,
+        BsDropdownModule.forRoot(),
+        ProgressbarModule.forRoot(),
+        TooltipModule.forRoot(),
+        CollapseModule.forRoot(),
+        TabsModule.forRoot(),
+        PaginationModule.forRoot(),
+        AlertModule.forRoot(),
+        BsDatepickerModule.forRoot(),
+        CarouselModule.forRoot(),
+        ModalModule.forRoot(),
+    ],
+    providers: [
+        Title,
+        {
+            provide: LocationStrategy,
+            useClass: PathLocationStrategy
+        }
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
-export class AppModule {}
+export class AppModule {
+}

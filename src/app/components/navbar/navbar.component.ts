@@ -1,5 +1,7 @@
-import {Component, OnInit, Renderer2, Inject, HostListener, NgModule} from '@angular/core';
+import {Component, OnInit, Renderer2, Inject, HostListener} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
+import { PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
     selector: 'app-navbar',
@@ -7,31 +9,41 @@ import {DOCUMENT} from '@angular/common';
 })
 export class NavbarComponent implements OnInit {
     isCollapsed = true;
+    isBrowser: boolean;
 
     constructor(
         private renderer: Renderer2,
-        @Inject(DOCUMENT) document
-    ) { }
+        @Inject(DOCUMENT) document,
+        // tslint:disable-next-line:ban-types
+        @Inject(PLATFORM_ID) platformId: Object
+    ) {
+        this.isBrowser = isPlatformBrowser(platformId);
+    }
+
 
     @HostListener('window:scroll', ['$event'])
     // Aqui altera a cor da Navbar
     onWindowScroll(e) {
-        if (window.pageYOffset > 100) {
-            const element = document.getElementById('navbar-top');
-            if (element) {
-                element.classList.remove('navbar-transparent');
-                element.classList.add('bg-rainbow');
-            }
-        } else {
-            const element = document.getElementById('navbar-top');
-            if (element) {
-                element.classList.add('navbar-transparent');
-                element.classList.remove('bg-rainbow');
+        if (this.isBrowser) {
+            // do something with window here
+            if (window.pageYOffset > 100) {
+                const element = document.getElementById('navbar-top');
+                if (element) {
+                    element.classList.remove('navbar-transparent');
+                    element.classList.add('bg-rainbow');
+                }
+            } else {
+                const element = document.getElementById('navbar-top');
+                if (element) {
+                    element.classList.add('navbar-transparent');
+                    element.classList.remove('bg-rainbow');
+                }
             }
         }
+
     }
 
     ngOnInit() {
-        this.onWindowScroll(event);
+        this.onWindowScroll(UIEvent);
     }
 }
