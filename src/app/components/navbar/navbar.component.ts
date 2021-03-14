@@ -1,25 +1,17 @@
-import {Component, OnInit, OnDestroy, Renderer2, Inject, HostListener, NgModule} from '@angular/core';
-import {DOCUMENT, Location} from '@angular/common';
-import {TooltipModule} from 'ngx-bootstrap/tooltip';
+import {Component, OnInit, HostListener} from '@angular/core';
 
-@Component({
-    selector: 'app-navbar',
-    templateUrl: 'navbar.component.html'
-})
-@NgModule(
+@Component(
     {
-        imports:[
-            TooltipModule,
-        ]
+        selector: 'app-navbar',
+        templateUrl: 'navbar.component.html'
     }
 )
-export class NavbarComponent implements OnInit, OnDestroy {
+
+export class NavbarComponent implements OnInit {
     isCollapsed = true;
-    constructor(
-        private renderer: Renderer2,
-        public location: Location,
-        @Inject(DOCUMENT) document
-    ) {}
+
+    constructor() { }
+
     @HostListener('window:scroll', ['$event'])
     // Aqui altera a cor da Navbar
     onWindowScroll(e) {
@@ -37,11 +29,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
             }
         }
     }
+
     ngOnInit() {
         this.onWindowScroll(event);
-    }
-
-    ngOnDestroy() {
-
     }
 }
