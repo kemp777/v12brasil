@@ -1,29 +1,23 @@
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { HttpClientModule } from "@angular/common/http";
-
-import { BsDropdownModule } from "ngx-bootstrap/dropdown";
-import { ProgressbarModule } from "ngx-bootstrap/progressbar";
-import { TooltipModule } from "ngx-bootstrap/tooltip";
-import { CollapseModule } from "ngx-bootstrap/collapse";
-import { TabsModule } from "ngx-bootstrap/tabs";
-import { PaginationModule } from "ngx-bootstrap/pagination";
-import { AlertModule } from "ngx-bootstrap/alert";
-import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
-import { CarouselModule } from "ngx-bootstrap/carousel";
-import { ModalModule } from "ngx-bootstrap/modal";
-
-import { PagesModule } from "./pages/pages.module";
-
-import { IndexComponent } from "./pages/index/index.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PagesModule } from './pages/pages.module';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
+import {CustomersComponent} from './components/customers/customers.component';
 @NgModule({
   declarations: [
-    AppComponent
-    // IndexComponent
+      AppComponent,
+      NavbarComponent,
+      ContactComponent,
+      CustomersComponent,
+      FooterComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -31,12 +25,13 @@ import { IndexComponent } from "./pages/index/index.component";
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
+    CollapseModule,
+    PagesModule,
     // BsDropdownModule.forRoot(),
     // ProgressbarModule.forRoot(),
     // TooltipModule.forRoot(),
     // CollapseModule.forRoot(),
     // TabsModule.forRoot(),
-    PagesModule
     // PaginationModule.forRoot(),
     // AlertModule.forRoot(),
     // BsDatepickerModule.forRoot(),

@@ -37,6 +37,8 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit() {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('index-page');
     this.onWindowScroll(event);
   }
 }

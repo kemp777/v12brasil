@@ -1,7 +1,7 @@
 .footer {
   --angle: 0deg;
   border-top: 2px solid transparent;
-  border-image: conic-gradient(from var(--angle), #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82, #07b39b, #1098ad, #5073b8, #a166ab, #ef4e7b, #f37055) 1;
+  border-image: conic-gradient(from var(--angle), #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82, #07b39b, #1098ad, #5073b8, #a166ab, #ef4e7b, #f37055, #f79533) 1;
   animation: 10s rotate linear infinite;
   background-size: 300% 300%;
   position: relative;
