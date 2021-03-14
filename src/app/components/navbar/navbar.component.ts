@@ -1,16 +1,17 @@
-import {Component, OnInit, HostListener} from '@angular/core';
+import {Component, OnInit, Renderer2, Inject, HostListener, NgModule} from '@angular/core';
+import {DOCUMENT} from '@angular/common';
 
-@Component(
-    {
-        selector: 'app-navbar',
-        templateUrl: 'navbar.component.html'
-    }
-)
-
+@Component({
+    selector: 'app-navbar',
+    templateUrl: 'navbar.component.html'
+})
 export class NavbarComponent implements OnInit {
     isCollapsed = true;
 
-    constructor() { }
+    constructor(
+        private renderer: Renderer2,
+        @Inject(DOCUMENT) document
+    ) { }
 
     @HostListener('window:scroll', ['$event'])
     // Aqui altera a cor da Navbar
