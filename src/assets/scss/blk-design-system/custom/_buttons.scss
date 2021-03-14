@@ -49,7 +49,7 @@
       .fa,
       .far,
       .fas,
-      .tim-icons {
+      .v12-icons {
         font-size: $icon-font-size-sm;
       }
     }
@@ -63,12 +63,12 @@
       .far,
       .fas,
       .fab,
-      .tim-icons {
+      .v12-icons {
         font-size: $icon-font-size-lg !important;
       }
     }
 
-    &:not(.btn-footer) .tim-icons,
+    &:not(.btn-footer) .v12-icons,
     &:not(.btn-footer) .fa,
     &:not(.btn-footer) .far,
     &:not(.btn-footer) .fas,
@@ -83,7 +83,7 @@
     }
   }
 
-  &:not(.btn-icon) .tim-icons {
+  &:not(.btn-icon) .v12-icons {
     position: relative;
     top: -1px;
   }

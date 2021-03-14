@@ -1,10 +1,18 @@
-import {Component, OnInit, OnDestroy, Renderer2, Inject, HostListener} from '@angular/core';
+import {Component, OnInit, OnDestroy, Renderer2, Inject, HostListener, NgModule} from '@angular/core';
 import {DOCUMENT, Location} from '@angular/common';
+import {TooltipModule} from 'ngx-bootstrap/tooltip';
 
 @Component({
     selector: 'app-navbar',
     templateUrl: 'navbar.component.html'
 })
+@NgModule(
+    {
+        imports:[
+            TooltipModule,
+        ]
+    }
+)
 export class NavbarComponent implements OnInit, OnDestroy {
     isCollapsed = true;
     constructor(

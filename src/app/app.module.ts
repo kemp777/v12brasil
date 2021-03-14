@@ -10,8 +10,17 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
-import {CustomersComponent} from './components/customers/customers.component';
-import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@angular/common';
+import { CustomersComponent } from './components/customers/customers.component';
+import { LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {TooltipModule} from 'ngx-bootstrap/tooltip';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import {ProgressbarModule} from 'ngx-bootstrap/progressbar';
+import {TabsModule} from 'ngx-bootstrap/tabs';
+import {PaginationModule} from 'ngx-bootstrap/pagination';
+import {AlertModule} from 'ngx-bootstrap/alert';
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import {CarouselModule} from 'ngx-bootstrap/carousel';
+import {ModalModule} from 'ngx-bootstrap/modal';
 @NgModule({
   declarations: [
       AppComponent,
@@ -28,16 +37,16 @@ import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@ang
     AppRoutingModule,
     CollapseModule,
     PagesModule,
-    // BsDropdownModule.forRoot(),
-    // ProgressbarModule.forRoot(),
-    // TooltipModule.forRoot(),
-    // CollapseModule.forRoot(),
-    // TabsModule.forRoot(),
-    // PaginationModule.forRoot(),
-    // AlertModule.forRoot(),
-    // BsDatepickerModule.forRoot(),
-    // CarouselModule.forRoot(),
-    // ModalModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    TooltipModule.forRoot(),
+    CollapseModule.forRoot(),
+    TabsModule.forRoot(),
+    PaginationModule.forRoot(),
+    AlertModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    CarouselModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
