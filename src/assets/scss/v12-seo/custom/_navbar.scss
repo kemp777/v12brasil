@@ -2,7 +2,7 @@
   padding: $navbar-padding-x;
   width: $full-width;
   z-index: 1050;
-  background: $primary;
+  background: $default;
 
   .photo {
     display: inline-block;
@@ -51,7 +51,13 @@
 
   &.navbar-transparent {
     background: $transparent-bg !important;
-    padding-top: 25px;
+    //padding-top: 25px;
+    --angle: 0deg;
+    //background: linear-gradient(124deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) !important;
+    //background-size: 100% 100%;
+    //border-bottom: 2px solid transparent;
+    //border-image: conic-gradient(from var(--angle), #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82, #07b39b, #1098ad, #5073b8, #a166ab, #ef4e7b, #f37055, #f79533) 1;
+    //animation: 10s rotate linear infinite;
   }
 
   &.bg-white {
@@ -110,8 +116,11 @@
   }
 
   &.bg-rainbow {
-    background: linear-gradient(124deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) !important;
-    background-size: 425% 425%;
+    --angle: 0deg;
+    background: #0C0F18;
+    border-bottom: 2px solid transparent;
+    border-image: conic-gradient(from var(--angle), #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82, #07b39b, #1098ad, #5073b8, #a166ab, #ef4e7b, #f37055, #f79533) 1;
+    animation: 10s rotate linear infinite;
   }
 
   &.bg-success {
@@ -140,16 +149,16 @@
   }
 }
 
-@keyframes rainbow {
-  0% {
-    background-position: 0% 82%
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  50% {
-    background-position: 100% 19%
-  }
-  100% {
-    background-position: 0% 82%
-  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .navbar-minimize-fixed {
