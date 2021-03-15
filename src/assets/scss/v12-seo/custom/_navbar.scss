@@ -28,6 +28,42 @@
     }
   }
 
+  .navbar-nav {
+    .nav-item .nav-link-instagram {
+      position: relative;
+      color: inherit;
+      line-height: 20px;
+      display: inline-flex;
+      &:hover {
+        color: #3f729b !important;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item .nav-link-facebook {
+      position: relative;
+      color: inherit;
+      line-height: 20px;
+      display: inline-flex;
+      &:hover {
+        color: #4267B2 !important;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item .nav-link-twitter {
+      position: relative;
+      color: inherit;
+      line-height: 20px;
+      display: inline-flex;
+      &:hover {
+        color: #1DA1F2 !important;
+      }
+    }
+  }
+
   .navbar-wrapper {
     display: flex;
     align-items: center;
