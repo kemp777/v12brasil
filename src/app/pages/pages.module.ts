@@ -5,6 +5,7 @@ import {SobreComponent} from './sobre/sobre.component';
 import {ServicosComponent} from './servicos/servicos.component';
 import {WebsitesComponent} from './servicos/websites/websites.component';
 import {SeoComponent} from './servicos/seo/seo.component';
+import {EcommerceComponent} from './servicos/ecommerce/ecommerce.component';
 
 @NgModule({
     imports: [
@@ -15,14 +16,16 @@ import {SeoComponent} from './servicos/seo/seo.component';
         SobreComponent,
         ServicosComponent,
         WebsitesComponent,
-        SeoComponent
+        SeoComponent,
+        EcommerceComponent
     ],
     exports: [
         IndexComponent,
         SobreComponent,
         ServicosComponent,
         WebsitesComponent,
-        SeoComponent
+        SeoComponent,
+        EcommerceComponent
     ],
     providers: []
 })

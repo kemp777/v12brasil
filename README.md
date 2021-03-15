@@ -1,63 +1,27 @@
-[Blk• Design  System Angular](https://demos.creative-tim.com/blk-design-system-angular) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fblk-design-system-angular&text=BLK%20Design%20System%20Angular%20-%20Free%20Angular%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%blk-design-system-angular%2F%3F_ga%3D2.234372891.44370326.1533641128-1803433978.1528781151&via=creativetim&hashtags=angular%2Cbootstrap)
+[V12 Brasil Angular Universal](https://v12brasilhospedagem.com.br) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/v12brasil)
 
 
  ![version](https://img.shields.io/badge/version-1.2.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/blk-design-system-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-angular/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/blk-design-system-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-angular/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
+**[V12 Brasil Angular Universal](https://v12brasilhospedagem.com.br)** is a responsive Bootstrap 4 kit, developed using 
+[Angular](https://angular.io/) and it is provided for free by Creative Tim. It is a beautiful cross-platform UI kit featuring 
+over 70 elements and 3 templates.
 
-![Product Presentation Image](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/opt_blk_angular_thumbnail.jpg?raw=true)
-
-**[Blk• Design  System Angular](http://demos.creative-tim.com/blk-design-system-angular/)** is a responsive Bootstrap 4 kit, developed using [Angular](https://angular.io/) and it is provided for free by Creative Tim. It is a beautiful cross-platform UI kit featuring over 70 elements and 3 templates.
-
-Blk• Design  System Angular will help you create a clean and simple website that is a perfect fit for today's black design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
+Blk• Design  System Angular will help you create a clean and simple website that is a perfect fit for today's black design. 
+It is built using the 12 column grid system, with components designed to fit together perfectly. 
+It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
 
 ## Complex Documentation
 
-Each element is well presented in a very complex documentation. You can read more about the idea behind this design system here. You can check the components here and the foundation here.
+Each element is well presented in a very complex documentation. You can read more about the idea behind this design system here. 
+You can check the components here and the foundation here.
 
 ## Bootstrap 4 Support
 
-Blk• Design System Angular is built on top of the much awaited Bootstrap 4 and Angular. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 or Angular project; you can just import the Blk• Design System Angular style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
-
-
-## Table of Contents
-
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
-
-## Versions
-
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system?ref=blkdsa-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsa-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-angular?ref=blkdsa-readme)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/blk-design-system-sketch/tree/sketch)
-
-
-
-
-
-
-| HTML | Angular | React |
-| --- | --- | --- |
-| [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  Angular](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/opt_blk_angular_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-angular)| [![BLK Design System  React](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/blk-design-system-react.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-react)
-
-## Demo
-
-| Buttons | Inputs | Navbars  |
-| --- | --- | ---  |
-| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/buttons.png?raw=true)](https://demos.creative-tim.com/blk-design-system-angular/#/)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/inputs.png?raw=true)](https://demos.creative-tim.com/blk-design-system-angular/#/)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/navbars.png?raw=true)](https://demos.creative-tim.com/blk-design-system-angular/#/)  
-
-| Register Page | Landing Page | Profile Page  |
-| --- | --- | ---  |
-| [![Register Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/blk-design-system-angular/register.png)](https://demos.creative-tim.com/blk-design-system-angular/#/register)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/landing.png?raw=true)](https://demos.creative-tim.com/blk-design-system-angular/#/landing)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-angular/profile.png?raw=true)](https://demos.creative-tim.com/blk-design-system-angular/#/profile)  
-
-[View More](https://demos.creative-tim.com/blk-design-system-angular)
-
+Blk• Design System Angular is built on top of the much awaited Bootstrap 4 and Angular. 
+This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 or Angular project; 
+you can just import the Blk• Design System Angular style over it. Most of the elements have been redesigned; 
+but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
 ## Quick start
 
@@ -66,7 +30,53 @@ Blk• Design System Angular is built on top of the much awaited Bootstrap 4 and
 - [Download from Creative Tim](https://www.creative-tim.com/product/blk-design-system-angular).
 - Clone the repo: `git clone https://github.com/creativetimofficial/blk-design-system-angular.git`.
 
+## Linux Systemd service
 
+O site para funcionar roda como serviço do Linux, utilizando o nodejs como interpretador apontando para o javascript do site.
+
+Abaixo segue a configuração para criar um serviço do Linux (Systemd) na pasta especificada abaixo:
+- `/etc/systemd/system`
+
+```
+[Unit]
+Description=V12 Brasil - Angular Universal
+After=network.target
+
+[Service]
+StandardInput=tty-force
+Type=simple
+ExecStart=/opt/cpanel/ea-nodejs10/bin/node /home/v12brasilhost/public_html/dist/v12-seo-angular/server/main.js
+Environment=CI=true
+WorkingDirectory=/home/v12brasilhost/
+StandardOutput=syslog
+StandardError=syslog
+Restart=on-failure
+User=v12brasilhost
+SyslogIdentifier=V12Angular
+
+[Install]
+WantedBy=multi-user.target
+```
+```
+[Unit]
+Description=V12 Brasil - Angular Universal
+After=network.target
+
+[Service]
+StandardInput=tty-force
+Type=simple
+ExecStart=/bin/bash -c '$$(which node) /home/v12brasilhost/public_html/dist/v12-seo-angular/server/main.js'
+Environment=CI=true
+WorkingDirectory=/home/v12brasilhost/
+StandardOutput=syslog
+StandardError=syslog
+Restart=on-failure
+User=v12brasilhost
+SyslogIdentifier=V12Angular
+
+[Install]
+WantedBy=multi-user.target
+```
 ## Documentation
 The documentation for the BLK Design System Angular is hosted at our [website](https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview).
 
@@ -153,10 +163,6 @@ At present, we officially aim to support the last two versions of the following 
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/blk-design-system-angular/issues)
 - **Dashboards:**
 
-| HTML | Angular | Vue  | React  |
-| --- | --- | ---  | ---  |
-| [![Black Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard/black-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard) | [![Black Dashboard  Angular](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard-angular/opt_bd_angular_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard-angular) | [![Vue Black Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-black-dashboard/vue-black-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/vue-black-dashboard)  | [![Black Dashboard React](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard-react/black-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard-react)  |
-
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the BLK Design System Angular. Here are some advices for our users that want to report an issue:
@@ -167,29 +173,6 @@ We use GitHub Issues as the official bug tracker for the BLK Design System Angul
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=blkdsa-readme)
+- Copyright 2018 V12-Brasil (https://www.v12brasil.com.br)
 
-- Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-angular/blob/master/LICENSE.md)
-
-## Useful Links
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=blkdsa-github-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=blkdsa-github-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=blkdsa-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=blkdsa-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-theme?ref=blkdsa-github-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=blkdsa-github-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=blkdsa-github-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=blkdsa-github-readme)
-
-### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Instagram: <https://www.instagram.com/CreativeTimOfficial>
+- Licensed under MIT (LICENSE.md)

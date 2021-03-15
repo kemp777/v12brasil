@@ -8,6 +8,7 @@ import {SobreComponent} from './pages/sobre/sobre.component';
 import {ServicosComponent} from './pages/servicos/servicos.component';
 import {WebsitesComponent} from './pages/servicos/websites/websites.component';
 import {SeoComponent} from './pages/servicos/seo/seo.component';
+import {EcommerceComponent} from './pages/servicos/ecommerce/ecommerce.component';
 
 const title = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
 
@@ -18,6 +19,7 @@ const routes: Routes = [
     {path: 'servicos', component: ServicosComponent, data: {title: 'Serviços - ' + title}},
     {path: 'servicos/websites', component: WebsitesComponent, data: {title: 'Serviços - Websites - ' + title}},
     {path: 'servicos/seo', component: SeoComponent, data: {title: 'Serviços - SEO - ' + title}},
+    {path: 'servicos/ecommerce', component: EcommerceComponent, data: {title: 'Serviços - E-Commerce - ' + title}},
 ];
 
 @NgModule({
@@ -26,8 +28,9 @@ const routes: Routes = [
         BrowserModule,
         RouterModule.forRoot(routes, {
             useHash: false,
-            initialNavigation: 'enabled'
-        })
+            initialNavigation: 'enabled',
+            anchorScrolling: 'enabled'
+        },)
     ],
     exports: [RouterModule]
 })
