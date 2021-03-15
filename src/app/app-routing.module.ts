@@ -6,6 +6,8 @@ import {Routes, RouterModule} from '@angular/router';
 import {IndexComponent} from './pages/index/index.component';
 import {SobreComponent} from './pages/sobre/sobre.component';
 import {ServicosComponent} from './pages/servicos/servicos.component';
+import {WebsitesComponent} from './pages/servicos/websites/websites.component';
+import {SeoComponent} from './pages/servicos/seo/seo.component';
 
 const title = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
 
@@ -14,6 +16,8 @@ const routes: Routes = [
     {path: 'home', component: IndexComponent, data: {title: 'Início - ' + title}},
     {path: 'sobre', component: SobreComponent, data: {title: 'Sobre - ' + title}},
     {path: 'servicos', component: ServicosComponent, data: {title: 'Serviços - ' + title}},
+    {path: 'servicos/websites', component: WebsitesComponent, data: {title: 'Serviços - Websites - ' + title}},
+    {path: 'servicos/seo', component: SeoComponent, data: {title: 'Serviços - SEO - ' + title}},
 ];
 
 @NgModule({
