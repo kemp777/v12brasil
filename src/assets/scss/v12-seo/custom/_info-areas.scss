@@ -14,6 +14,12 @@
     color: $white;
     margin: 0.875rem * 2 0 0.875rem;
   }
+  .info-title-link {
+    color: $white;
+    margin: 0.875rem * 2 0 0.875rem;
+    outline: none;
+    cursor: pointer;
+  }
   p {
     color: $opacity-gray-8;
     line-height: 24px;

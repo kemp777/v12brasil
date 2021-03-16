@@ -141,6 +141,16 @@ p {
   font-size: $font-size-sm;
 }
 
+.category-link,
+.card-category-link {
+  text-transform: capitalize;
+  font-weight: $font-weight-normal;
+  color: rgba($white, 0.6);
+  font-size: $font-size-sm;
+  outline: none;
+  cursor:pointer;
+}
+
 .card-category {
   font-size: $font-size-sm;
 }

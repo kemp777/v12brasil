@@ -35,7 +35,7 @@
               Por mais de 20 anos ajudamos clientes a crescer online! O seu crescimento é o nosso crescimento também e se você acredita estar pronto para realizar todo o seu potencial digital, estamos aqui para ajudá-lo!
             </p>
             <div class="btn-wrapper mb-3">
-              <p class="category text-success d-inline mr-1">aumente sua presença e engajamento online</p>
+              <a class="category text-success d-inline mr-1" [routerLink]="['/servicos']">aumente sua presença e engajamento online</a>
               <a class="btn btn-success btn-link btn-sm" [routerLink]="['/servicos']" placement="bottom" tooltip="Saiba mais...">
                 <i class="v12-icons icon-minimal-right"> </i>
               </a>
@@ -68,8 +68,11 @@
               </p>
               <br />
 
-              <a class="font-weight-bold text-info mt-5" href="javascript:void(0)">
-                saiba mais... <i class="v12-icons icon-minimal-right text-info"> </i>
+              <a class="category text-success mt-5" [routerLink]="['/sobre']">
+                saiba mais...
+              </a>
+              <a class="btn btn-success btn-link btn-sm" [routerLink]="['/sobre']" placement="bottom" tooltip="Saiba mais...">
+                <i class="v12-icons icon-minimal-right"> </i>
               </a>
             </div>
           </div>
@@ -94,36 +97,36 @@
         </div>
         <div class="col-lg-12">
           <div class="row row-grid justify-content-center">
-            <div class="col-lg-3">
+            <div class="col-lg-4">
               <div class="info">
                 <div class="icon icon-primary">
                   <i class="v12-icons icon-globe-2"> </i>
                 </div>
-                <h4 class="info-title">WEBSITES</h4>
+                <h4 class="info-title-link" [routerLink]="['/servicos/websites']">WEBSITES</h4>
                 <hr class="line-primary" />
                 <p>
                   Desenvolvimento de websites responsivos e confiáveis com foco em conversão e experiência de usuários.
                 </p>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
               <div class="info">
                 <div class="icon icon-warning">
                   <i class="v12-icons icon-cart"> </i>
                 </div>
-                <h4 class="info-title">LOJAS VIRTUAIS</h4>
+                <h4 class="info-title-link" [routerLink]="['/servicos/ecommerce']">LOJAS VIRTUAIS</h4>
                 <hr class="line-warning" />
                 <p>
                   Lojas Virtuais planejadas e desenvolvidas desde a concepção até a adaptação do plano de negócios para a operação online.
                 </p>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
               <div class="info">
                 <div class="icon icon-success">
                   <i class="v12-icons icon-chart-bar-32"> </i>
                 </div>
-                <h4 class="info-title">SEO</h4>
+                <h4 class="info-title-link" [routerLink]="['/servicos/seo']">SEO</h4>
                 <hr class="line-success" />
                 <p>
                   Posicionar a sua empresa no topo dos mecanismos de pesquisas é o objetivo das nossas estratégias de SEO.

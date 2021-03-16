@@ -14,7 +14,7 @@ const title = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
 
 const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home', component: IndexComponent, data: {title: 'Início - ' + title}},
+    {path: '', component: IndexComponent, data: {title: 'Início - ' + title}},
     {path: 'sobre', component: SobreComponent, data: {title: 'Sobre - ' + title}},
     {path: 'servicos', component: ServicosComponent, data: {title: 'Serviços - ' + title}},
     {path: 'servicos/websites', component: WebsitesComponent, data: {title: 'Serviços - Websites - ' + title}},
