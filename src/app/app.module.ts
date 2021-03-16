@@ -22,6 +22,7 @@ import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import {BrowserModule, Title} from '@angular/platform-browser';
+import {WhatsappComponent} from './components/whatsapp/whatsapp.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import {BrowserModule, Title} from '@angular/platform-browser';
         NavbarComponent,
         ContactComponent,
         CustomersComponent,
-        FooterComponent
+        FooterComponent,
+        WhatsappComponent
     ],
     imports: [
         BrowserModule.withServerTransition({appId: 'serverApp'}),
