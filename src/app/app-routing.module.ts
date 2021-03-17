@@ -9,14 +9,15 @@ import {WebsitesComponent} from './pages/servicos/websites/websites.component';
 import {SeoComponent} from './pages/servicos/seo/seo.component';
 import {EcommerceComponent} from './pages/servicos/ecommerce/ecommerce.component';
 
-const title = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
+const titleDescription = 'Agência de Marketing Digital e Consultoria';
+const titleBrand = 'V12 Brasil'
 
 const routes: Routes = [
     {
         path: '',
         component: IndexComponent,
         data: {
-            title,
+            title: titleBrand + ' - ' + titleDescription,
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Inicio',
@@ -27,7 +28,7 @@ const routes: Routes = [
         path: 'sobre',
         component: SobreComponent,
         data: {
-            title,
+            title: titleBrand + ' - ' + 'Sobre a Agência de Marketing Digital',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Sobre a Agência',
@@ -38,7 +39,7 @@ const routes: Routes = [
         path: 'servicos',
         component: ServicosComponent,
         data: {
-            title,
+            title: titleBrand + ' - ' + 'Serviços de Marketing Digital & SEO personalizados para cada cliente',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Serviçoss',
@@ -49,7 +50,7 @@ const routes: Routes = [
         path: 'servicos/websites',
         component: WebsitesComponent,
         data: {
-            title,
+            title: titleBrand + ' - ' + 'Um tipo de website para cada necessidade',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de  Websites',
@@ -60,7 +61,7 @@ const routes: Routes = [
         path: 'servicos/seo',
         component: SeoComponent,
         data: {
-            title,
+            title: titleBrand + ' - ' + 'Apareça na primeira página do Google',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de SEO',
@@ -71,7 +72,7 @@ const routes: Routes = [
         path: 'servicos/ecommerce',
         component: EcommerceComponent,
         data: {
-            title,
+            title: titleBrand + ' - ' + 'Vantagens de uma Loja Virtual',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Lojas Virtuais',

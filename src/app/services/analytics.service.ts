@@ -1,8 +1,7 @@
-import {Injectable} from '@angular/core';
-import {ActivatedRoute, NavigationEnd, Router, RoutesRecognized} from '@angular/router';
+import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
+import {NavigationEnd, Router, RoutesRecognized} from '@angular/router';
 import {environment} from '../../environments/environment.prod';
-import {Observable} from 'rxjs';
-import {filter, map} from 'rxjs/operators';
+import {isPlatformBrowser} from '@angular/common';
 
 // tslint:disable-next-line:ban-types
 declare var gtag: Function;
@@ -11,15 +10,18 @@ declare var gtag: Function;
     providedIn: 'root'
 })
 export class AnalyticsService {
-    gtagEventName = null;
-    gtagEventValue = null;
-    gtagEventLabel = null;
-    gtagEventCategory = null;
+    gtagEventName: null;
+    gtagEventValue: null;
+    gtagEventLabel: null;
+    gtagEventCategory: null;
+    isBrowser: boolean;
 
     constructor(
         private router: Router,
+        // tslint:disable-next-line:ban-types
+        @Inject(PLATFORM_ID) platformId: Object
     ) {
-
+        this.isBrowser = isPlatformBrowser(platformId);
     }
 
     public init() {
@@ -55,31 +57,33 @@ export class AnalyticsService {
     }
 
     private listenForRouteChanges() {
-        this.router.events.subscribe(event => {
-            if (event instanceof NavigationEnd) {
-                gtag('config', environment.googleAnalyticsKey, {
-                    'page_path': event.urlAfterRedirects,
-                });
-                // console.log('Sending Google Analytics hit for route', event.urlAfterRedirects);
-                // console.log('Property ID', environment.googleAnalyticsKey);
-            }
-            // if is a recognized route emmit a event to google analytics
-            if (event instanceof RoutesRecognized) {
-                const route = event.state.root.firstChild;
+        if (this.isBrowser) {
+            this.router.events.subscribe(event => {
+                if (event instanceof NavigationEnd) {
+                    gtag('config', environment.googleAnalyticsKey, {
+                        'page_path': event.urlAfterRedirects,
+                    });
+                    // console.log('Sending Google Analytics hit for route', event.urlAfterRedirects);
+                    // console.log('Property ID', environment.googleAnalyticsKey);
+                }
+                // if is a recognized route emmit a event to google analytics
+                if (event instanceof RoutesRecognized) {
+                    const route = event.state.root.firstChild;
 
-                this.gtagEventName = route.data.gtagEventName || '';
-                this.gtagEventCategory = route.data.gtagEventCategory || '';
-                this.gtagEventLabel = route.data.gtagEventLabel || '';
-                this.gtagEventValue = route.data.gtagEventValue || '';
+                    this.gtagEventName = route.data.gtagEventName || '';
+                    this.gtagEventCategory = route.data.gtagEventCategory || '';
+                    this.gtagEventLabel = route.data.gtagEventLabel || '';
+                    this.gtagEventValue = route.data.gtagEventValue || '';
 
-                // Setting 'gtag' event parameters
-                this.emmitEvent(
-                    this.gtagEventName,
-                    this.gtagEventCategory,
-                    this.gtagEventLabel,
-                    this.gtagEventValue,
-                );
-            }
-        });
+                    // Setting 'gtag' event parameters
+                    this.emmitEvent(
+                        this.gtagEventName,
+                        this.gtagEventCategory,
+                        this.gtagEventLabel,
+                        this.gtagEventValue,
+                    );
+                }
+            });
+        }
     }
 }

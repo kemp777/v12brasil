@@ -12,6 +12,8 @@ import {AnalyticsService} from './services/analytics.service';
 })
 export class AppComponent implements OnInit {
     isBrowser: boolean;
+    title: string;
+    fallBackTitle: string;
 
     constructor(
         private renderer: Renderer2,
@@ -25,6 +27,7 @@ export class AppComponent implements OnInit {
         @Inject(PLATFORM_ID) platformId: Object
     ) {
         this.isBrowser = isPlatformBrowser(platformId);
+        this.fallBackTitle = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
     }
 
     ngOnInit() {
@@ -32,16 +35,16 @@ export class AppComponent implements OnInit {
             this.analytics.init();
 
             const body = document.getElementsByTagName('body')[0];
-            const appTitle = this.titleService.getTitle();
+            this.title = this.titleService.getTitle();
 
             this.router.events.pipe(
                 filter(event => event instanceof NavigationEnd),
                 map(() => {
                     const child = this.activatedRoute.firstChild;
                     if (child.snapshot.data.title) {
-                        return child.snapshot.data.title;
+                        return child.snapshot.data.gtagEventCategory + ' - ' + child.snapshot.data.title;
                     }
-                    return appTitle;
+                    return this.fallBackTitle;
                 })
             ).subscribe((ttl: string) => {
                 this.titleService.setTitle(ttl);
