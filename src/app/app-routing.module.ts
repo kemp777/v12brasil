@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 import {Routes, RouterModule} from '@angular/router';
-
 import {IndexComponent} from './pages/index/index.component';
 import {SobreComponent} from './pages/sobre/sobre.component';
 import {ServicosComponent} from './pages/servicos/servicos.component';
@@ -13,13 +12,73 @@ import {EcommerceComponent} from './pages/servicos/ecommerce/ecommerce.component
 const title = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: '', component: IndexComponent, data: {title: 'Início - ' + title}},
-    {path: 'sobre', component: SobreComponent, data: {title: 'Sobre - ' + title}},
-    {path: 'servicos', component: ServicosComponent, data: {title: 'Serviços - ' + title}},
-    {path: 'servicos/websites', component: WebsitesComponent, data: {title: 'Serviços - Websites - ' + title}},
-    {path: 'servicos/seo', component: SeoComponent, data: {title: 'Serviços - SEO - ' + title}},
-    {path: 'servicos/ecommerce', component: EcommerceComponent, data: {title: 'Serviços - E-Commerce - ' + title}},
+    {
+        path: '',
+        component: IndexComponent,
+        data: {
+            title,
+            gtagEventName: 'click',
+            gtagEventValue: '',
+            gtagEventLabel: 'Acesso ao link(rota) de Inicio',
+            gtagEventCategory: 'Início',
+        }
+    },
+    {
+        path: 'sobre',
+        component: SobreComponent,
+        data: {
+            title,
+            gtagEventName: 'click',
+            gtagEventValue: '',
+            gtagEventLabel: 'Acesso ao link(rota) de Sobre a Agência',
+            gtagEventCategory: 'Sobre',
+        }
+    },
+    {
+        path: 'servicos',
+        component: ServicosComponent,
+        data: {
+            title,
+            gtagEventName: 'click',
+            gtagEventValue: '',
+            gtagEventLabel: 'Acesso ao link(rota) de Serviçoss',
+            gtagEventCategory: 'Serviços',
+        }
+    },
+    {
+        path: 'servicos/websites',
+        component: WebsitesComponent,
+        data: {
+            title,
+            gtagEventName: 'click',
+            gtagEventValue: '',
+            gtagEventLabel: 'Acesso ao link(rota) de  Websites',
+            gtagEventCategory: 'Websites',
+        }
+    },
+    {
+        path: 'servicos/seo',
+        component: SeoComponent,
+        data: {
+            title,
+            gtagEventName: 'click',
+            gtagEventValue: '',
+            gtagEventLabel: 'Acesso ao link(rota) de SEO',
+            gtagEventCategory: 'SEO',
+        }
+    },
+    {
+        path: 'servicos/ecommerce',
+        component: EcommerceComponent,
+        data: {
+            title,
+            gtagEventName: 'click',
+            gtagEventValue: '',
+            gtagEventLabel: 'Acesso ao link(rota) de Lojas Virtuais',
+            gtagEventCategory: 'Lojas Virtuais',
+        }
+    },
+    {path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
 @NgModule({

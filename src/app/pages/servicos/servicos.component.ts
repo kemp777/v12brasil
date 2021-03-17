@@ -4,7 +4,4 @@ import { Component } from '@angular/core';
     selector: 'app-servicos',
     templateUrl: 'servicos.component.html'
 })
-export class ServicosComponent {
-    isCollapsed = true;
-    constructor() {}
-}
+export class ServicosComponent { }

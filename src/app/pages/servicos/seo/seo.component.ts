@@ -4,5 +4,4 @@ import { Component } from '@angular/core';
     selector: 'app-seo',
     templateUrl: 'seo.component.html'
 })
-export class SeoComponent {
-}
+export class SeoComponent { }

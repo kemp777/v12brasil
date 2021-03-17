@@ -23,7 +23,6 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import {BrowserModule, Title} from '@angular/platform-browser';
 import {WhatsappComponent} from './components/whatsapp/whatsapp.component';
-
 @NgModule({
     declarations: [
         AppComponent,

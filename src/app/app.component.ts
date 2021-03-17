@@ -3,6 +3,7 @@ import {DOCUMENT, isPlatformBrowser} from '@angular/common';
 import {Title} from '@angular/platform-browser';
 import {Router, NavigationEnd, ActivatedRoute} from '@angular/router';
 import {filter, map} from 'rxjs/operators';
+import {AnalyticsService} from './services/analytics.service';
 
 @Component({
     selector: 'app-root',
@@ -15,6 +16,8 @@ export class AppComponent implements OnInit {
     constructor(
         private renderer: Renderer2,
         @Inject(DOCUMENT) document,
+        private analytics: AnalyticsService,
+        // tslint:disable-next-line:no-shadowed-variable
         private router: Router,
         private activatedRoute: ActivatedRoute,
         private titleService: Title,
@@ -26,6 +29,8 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         if (this.isBrowser) {
+            this.analytics.init();
+
             const body = document.getElementsByTagName('body')[0];
             const appTitle = this.titleService.getTitle();
 
