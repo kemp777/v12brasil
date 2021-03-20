@@ -91,7 +91,7 @@ const routes: Routes = [
             initialNavigation: 'enabled',
             anchorScrolling: 'enabled',
             scrollPositionRestoration: 'enabled'
-        },)
+        })
     ],
     exports: [RouterModule]
 })

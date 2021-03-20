@@ -2,12 +2,16 @@ import {Component, OnInit, Renderer2, Inject, HostListener} from '@angular/core'
 import {DOCUMENT} from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import {faWhatsappSquare, faFacebookSquare, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
     selector: 'app-navbar',
     templateUrl: 'navbar.component.html'
 })
 export class NavbarComponent implements OnInit {
+    public faFacebookSquare = faFacebookSquare;
+    public faTwitterSquare = faTwitterSquare;
+    public faWhasappSquare = faWhatsappSquare;
     isCollapsed = true;
     isBrowser: boolean;
 

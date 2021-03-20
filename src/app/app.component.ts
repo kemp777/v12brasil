@@ -13,6 +13,8 @@ import {AnalyticsService} from './services/analytics.service';
 export class AppComponent implements OnInit {
     isBrowser: boolean;
     title: string;
+    domain: string
+    country: string;
     fallBackTitle: string;
 
     constructor(
@@ -28,15 +30,22 @@ export class AppComponent implements OnInit {
     ) {
         this.isBrowser = isPlatformBrowser(platformId);
         this.fallBackTitle = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
+        this.domain = 'https://www.v12brasil.com.br';
+        this.country = 'pt-br';
+        document.documentElement.lang = this.country;
     }
 
     ngOnInit() {
         if (this.isBrowser) {
+            const linkElement = document.createElement('link');
+            this.renderer.setAttribute(linkElement, 'rel', 'alternate');
+            this.renderer.setAttribute(linkElement, 'hreflang', this.country);
+            this.renderer.setAttribute(linkElement, 'href', this.domain);
+            this.renderer.appendChild(document.head, linkElement);
             this.analytics.init();
 
             const body = document.getElementsByTagName('body')[0];
             this.title = this.titleService.getTitle();
-
             this.router.events.pipe(
                 filter(event => event instanceof NavigationEnd),
                 map(() => {
@@ -49,7 +58,6 @@ export class AppComponent implements OnInit {
             ).subscribe((ttl: string) => {
                 this.titleService.setTitle(ttl);
             });
-
             body.classList.add('index-page');
         }
     }

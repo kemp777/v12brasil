@@ -46,6 +46,7 @@
     "@angular/router": "11.2.5",
     "@fortawesome/angular-fontawesome": "^0.8.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@nguniversal/express-engine": "^11.2.1",
     "chart.js": "2.9.4",
