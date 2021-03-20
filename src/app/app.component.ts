@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     ) {
         this.isBrowser = isPlatformBrowser(platformId);
         this.fallBackTitle = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
-        this.domain = 'https://www.v12brasil.com.br';
+        this.domain = 'https://v12brasil.com.br';
         this.country = 'pt-br';
         document.documentElement.lang = this.country;
     }
@@ -42,6 +42,37 @@ export class AppComponent implements OnInit {
             this.renderer.setAttribute(linkElement, 'hreflang', this.country);
             this.renderer.setAttribute(linkElement, 'href', this.domain);
             this.renderer.appendChild(document.head, linkElement);
+
+            const metaElement = document.createElement('meta');
+            this.renderer.setAttribute(metaElement, 'name', 'keywords');
+            this.router.events.pipe(
+                filter(event => event instanceof NavigationEnd),
+                map(() => {
+                    const child = this.activatedRoute.firstChild;
+                    if (child.snapshot.data.keywords) {
+                        return child.snapshot.data.keywords;
+                    }
+                })
+            ).subscribe((keywords: string) => {
+                this.renderer.setAttribute(metaElement, 'content',keywords);
+            });
+            this.renderer.appendChild(document.head, metaElement);
+
+            const metaElementDescription = document.createElement('meta');
+            this.renderer.setAttribute(metaElementDescription, 'name', 'description');
+            this.router.events.pipe(
+                filter(event => event instanceof NavigationEnd),
+                map(() => {
+                    const child = this.activatedRoute.firstChild;
+                    if (child.snapshot.data.description) {
+                        return child.snapshot.data.description;
+                    }
+                })
+            ).subscribe((description: string) => {
+                this.renderer.setAttribute(metaElementDescription, 'content',description);
+            });
+            this.renderer.appendChild(document.head, metaElementDescription);
+
             this.analytics.init();
 
             const body = document.getElementsByTagName('body')[0];
@@ -51,12 +82,12 @@ export class AppComponent implements OnInit {
                 map(() => {
                     const child = this.activatedRoute.firstChild;
                     if (child.snapshot.data.title) {
-                        return child.snapshot.data.gtagEventCategory + ' - ' + child.snapshot.data.title;
+                        return child.snapshot.data.title;
                     }
                     return this.fallBackTitle;
                 })
-            ).subscribe((ttl: string) => {
-                this.titleService.setTitle(ttl);
+            ).subscribe((title: string) => {
+                this.titleService.setTitle(title);
             });
             body.classList.add('index-page');
         }
