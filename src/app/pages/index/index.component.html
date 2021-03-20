@@ -35,14 +35,14 @@
               Por mais de 20 anos ajudamos clientes a crescer online! O seu crescimento é o nosso crescimento também e se você acredita estar pronto para realizar todo o seu potencial digital, estamos aqui para ajudá-lo!
             </p>
             <div class="btn-wrapper mb-3">
-              <a class="category text-success d-inline mr-1" [routerLink]="['/servicos']">aumente sua presença e engajamento online</a>
-              <a class="btn btn-success btn-link btn-sm" [routerLink]="['/servicos']" placement="bottom" tooltip="Saiba mais...">
-                <i class="v12-icons icon-minimal-right"> </i>
+              <a aria-label="para saber como aumentar sua presença e engajamento online clique aqui..." class="category text-success d-inline mr-1" [routerLink]="['/servicos']">aumente sua presença e engajamento online</a>
+              <a aria-hidden="true" class="btn btn-success btn-link btn-sm" [routerLink]="['/servicos']" placement="bottom" tooltip="Saiba mais...">
+                <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
               </a>
             </div>
           </div>
           <div class="mx-auto col-lg-4 col-md-5 align-self-center">
-              <img alt="Agência de Marketing Digital & SEO" class="img-fluid" src="assets/img/seo.svg" />
+              <img alt="V12 - Agência de Marketing Digital & SEO" class="img-fluid" src="assets/img/seo.svg" />
           </div>
         </div>
       </div>
@@ -68,11 +68,9 @@
               </p>
               <br />
 
-              <a class="category text-success mt-5" [routerLink]="['/sobre']">
-                saiba mais...
-              </a>
-              <a class="btn btn-success btn-link btn-sm" [routerLink]="['/sobre']" placement="bottom" tooltip="Saiba mais...">
-                <i class="v12-icons icon-minimal-right"> </i>
+              <p class="text-success">Para saber mais detalhes sobre o assunto clique <a aria-label="Para saber mais sobre o assunto clique aqui" class="text-warning mt-5" [routerLink]="['/sobre']"> aqui.</a>
+              <a aria-hidden="true" class="btn btn-success btn-link btn-sm" [routerLink]="['/sobre']" placement="bottom" tooltip="saiba mais...">
+                <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
               </a>
             </div>
           </div>
