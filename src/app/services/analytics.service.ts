@@ -73,6 +73,7 @@ export class AnalyticsService {
             })(document);
             smartlook('init', '2a67f26ace12ecb366c68457b4f2b4202fbbc078');
          `;
+        document.head.appendChild(script3);
      }
 
     /**
