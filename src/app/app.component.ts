@@ -4,6 +4,7 @@ import {Title} from '@angular/platform-browser';
 import {Router, NavigationEnd, ActivatedRoute} from '@angular/router';
 import {filter, map} from 'rxjs/operators';
 import {AnalyticsService} from './services/analytics.service';
+import {environment} from '../environments/environment';
 
 @Component({
     selector: 'app-root',
@@ -55,6 +56,12 @@ export class AppComponent implements OnInit {
                 })
             ).subscribe((keywords: string) => {
                 this.renderer.setAttribute(metaElement, 'content',keywords);
+                // só vai 'cuspir' as keywords quando estiver rodando o projeto em ambiente local
+                if (environment.production) {
+                    // for production
+                } else {
+                    console.log(keywords)
+                }
             });
             this.renderer.appendChild(document.head, metaElement);
 

@@ -41,7 +41,7 @@ const routes: Routes = [
                 agencia digital em campinas,
                 agencia marketing digital campinas
             `,
-            description: 'A agência V12 Brasil é uma agencia de marketing digital especializada em SEO e UX UI design, sediada em Campinas/SP que atende empresas de todos os portes'
+            description: 'A agência V12 Brasil é uma agencia de marketing digital especializada em SEO e UX UI design, sediada em Campinas/SP que atende empresas de todos os portes.'
 
         }
     },
@@ -64,46 +64,69 @@ const routes: Routes = [
                 agencia seo marketing,
                 agencia ux ui design,
                 agência ux ui design,
-                agencia ux ui design em campinas,
+                agencia ux ui design em campinas
             `,
-            description: 'A agência V12 Brasil é uma agencia de marketing digital especializada em SEO e UX UI design, sediada em Campinas/SP'
+            description: 'A agência V12 Brasil é uma agencia de marketing digital especializada em SEO e UX UI design, sediada em Campinas/SP.'
         }
     },
     {
         path: 'servicos',
         component: ServicosComponent,
         data: {
-            title: titleBrand + ' - ' + 'Serviços de Marketing Digital & SEO personalizados para cada cliente',
+            title: 'Serviços de Marketing Digital para empresas - Agência ' + titleBrand,
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Serviçoss',
             gtagEventCategory: 'Serviços',
-            keywords: `serviços de marketing digital`,
-            description: ''
+            keywords: `
+                serviços de marketing digital,
+                servicos de marketing digital,
+                serviços de marketing digital campinas,
+                servicos de marketing digital campinas,
+                serviços marketing digital,
+                servicos marketing digital,
+                serviços marketing digital campinas,
+                servicos marketing digital campinas,
+                serviços de agencia de marketing digital,
+                marketing digital empresa de serviços
+            `,
+            description: 'A V12 Brasil é uma agência sediada em Campinas que presta serviços de Marketing Digital e SEO para empresas de pequeno, médio e grande porte.'
         }
     },
     {
         path: 'servicos/websites',
         component: WebsitesComponent,
         data: {
-            title: titleBrand + ' - ' + 'Um tipo de website para cada necessidade',
+            title: 'Criação e desenvolvimento de Websites em Campinas | Agência V12',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de  Websites',
-            gtagEventCategory: 'Websites',
-            keywords: '',
-            description: ''
+            gtagEventCategory: 'Serviços',
+            keywords: `
+                criação de sites,
+                desenvolvimento de sites,
+                agencia de sites,
+                agência de sites,
+                agencia criação de sites,
+                agencia criação sites,
+                agencia criação de sites em campinas,
+                agencia criação sites campinas,
+                agencia de criação de sites,
+                agência de criação de sites,
+                desenvolvimento de sites em campinas
+            `,
+            description: 'A V12 Brasil é uma agência sediada em Campinas que presta serviços de criação e desenvolvimento de sites para empresas de pequeno, médio e grande porte.'
         }
     },
     {
         path: 'servicos/seo',
         component: SeoComponent,
         data: {
-            title: titleBrand + ' - ' + 'Apareça na primeira página do Google',
+            title: titleBrand + ' | ' + 'Apareça na primeira página do Google',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de SEO',
-            gtagEventCategory: 'SEO',
+            gtagEventCategory: 'Serviços',
             keywords: '',
             description: ''
         }
@@ -112,11 +135,11 @@ const routes: Routes = [
         path: 'servicos/ecommerce',
         component: EcommerceComponent,
         data: {
-            title: titleBrand + ' - ' + 'Vantagens de uma Loja Virtual',
+            title: titleBrand + ' | ' + 'Vantagens de uma Loja Virtual',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Lojas Virtuais',
-            gtagEventCategory: 'Lojas Virtuais',
+            gtagEventCategory: 'Serviços',
             keywords: '',
             description: ''
         }
