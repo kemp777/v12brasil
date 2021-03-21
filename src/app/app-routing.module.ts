@@ -94,7 +94,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicos/websites',
+        path: 'servicos/criacao-e-desenvolvimento-de-websites',
         component: WebsitesComponent,
         data: {
             title: 'Criação e desenvolvimento de Websites em Campinas | Agência V12',
@@ -119,29 +119,52 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicos/seo',
+        path: 'servicos/agencia-especializada-em-seo-marketing',
         component: SeoComponent,
         data: {
-            title: titleBrand + ' | ' + 'Apareça na primeira página do Google',
+            title: 'Agência especializada em SEO | V12 Brasil Campinas SP',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de SEO',
             gtagEventCategory: 'Serviços',
-            keywords: '',
-            description: ''
+            keywords: `
+                agencia seo,
+                agência de seo,
+                agencia seo marketing,
+                agência especializada em seo,
+                agencia especializada em seo,
+                agencia seo em campinas,
+                agência seo em campinas,
+                agencia seo campinas/sp,
+                agência de seo campinas/sp,
+                agencia seo em campinas/sp,
+                agencia de seo em campinas sp
+            `,
+            description: 'A V12 Brasil é uma agência especializada em SEO, otimize seu site ou loja virtual para os mecanismos de busca, solicite um orçamento ou uma consultoria.'
         }
     },
     {
-        path: 'servicos/ecommerce',
+        path: 'servicos/agencia-ecommerce-criacao-de-loja-virtual',
         component: EcommerceComponent,
         data: {
-            title: titleBrand + ' | ' + 'Vantagens de uma Loja Virtual',
+            title: 'Ecommerce - Criação de Loja Virtual | Agência V12',
             gtagEventName: 'click',
             gtagEventValue: '',
             gtagEventLabel: 'Acesso ao link(rota) de Lojas Virtuais',
             gtagEventCategory: 'Serviços',
-            keywords: '',
-            description: ''
+            keywords: `
+                ecommerce,
+                criação de loja virtual,
+                criacao de loja virtual,
+                ecommerce website,
+                Ecommerce site,
+                ecommerce wordpress,
+                consultoria em e e-commerce,
+                agencia de e-commerce,
+                agencia loja virtual,
+                criação de loja virtual sp
+            `,
+            description: 'A V12 Brasil é uma agência de Campinas-SP especializada em criação e desenvolvimento de lojas virtuais, solicite um orçamento ou uma consultoria.'
         }
     },
     {path: '**', redirectTo: '', pathMatch: 'full'},
