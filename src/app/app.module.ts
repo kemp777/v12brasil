@@ -24,6 +24,7 @@ import {ModalModule} from 'ngx-bootstrap/modal';
 import {BrowserModule, Title} from '@angular/platform-browser';
 import {WhatsappComponent} from './components/whatsapp/whatsapp.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {FundoComponent} from './components/fundo/fundo.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -31,7 +32,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
         ContactComponent,
         CustomersComponent,
         FooterComponent,
-        WhatsappComponent
+        WhatsappComponent,
+        FundoComponent
     ],
     imports: [
         BrowserModule.withServerTransition({appId: 'serverApp'}),
