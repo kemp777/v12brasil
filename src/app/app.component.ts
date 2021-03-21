@@ -80,8 +80,6 @@ export class AppComponent implements OnInit {
             });
             this.renderer.appendChild(document.head, metaElementDescription);
 
-            this.analytics.init();
-
             const body = document.getElementsByTagName('body')[0];
             this.title = this.titleService.getTitle();
             this.router.events.pipe(
@@ -97,6 +95,8 @@ export class AppComponent implements OnInit {
                 this.titleService.setTitle(title);
             });
             body.classList.add('index-page');
+
+            this.analytics.init();
         }
     }
 }
