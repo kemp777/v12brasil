@@ -39,6 +39,18 @@ export class AnalyticsService {
         } catch (ex) {
             console.error('Error appending smartlook');
         }
+
+        // try {
+        //     this.generateHotJarScripts();
+        // } catch (ex) {
+        //     console.error('Error appending hotjar');
+        // }
+
+        try {
+            this.generateMicrosoftClarity();
+        } catch (ex) {
+            console.error('Error appending microsoft clarity');
+        }
     }
 
     /**
@@ -75,6 +87,33 @@ export class AnalyticsService {
          `;
         document.head.appendChild(script3);
      }
+
+     public generateMicrosoftClarity() {
+        const script1 = document.createElement('script');
+        script1.innerHTML = `
+             (function(c,l,a,r,i,t,y){
+                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+             })(window, document, "clarity", "script", "5wrsm4371j");
+        `;
+        document.head.appendChild(script1);
+     }
+
+     // public generateHotJarScripts() {
+     //     const script1 = document.createElement('script');
+     //     script1.innerHTML = `
+     //         (function(h,o,t,j,a,r){
+     //            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+     //            h._hjSettings={hjid:2307939,hjsv:6};
+     //            a=o.getElementsByTagName('head')[0];
+     //            r=o.createElement('script');r.async=1;
+     //            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+     //            a.appendChild(r);
+     //         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+     //     `;
+     //     document.head.appendChild(script1);
+     // }
 
     /**
      * Emmit a event thru 'gtag' so google analytics catch data

@@ -30,7 +30,12 @@
 }
 
 .header-filter {
-  position: inherit;
+  position: relative;
+
+  .container {
+    z-index: 2;
+    position: relative;
+  }
 }
 .clear-filter {
   &:before {
