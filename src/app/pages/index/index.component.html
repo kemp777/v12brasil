@@ -69,16 +69,6 @@
                                     necessidade de cada cliente, para transformar o seu negócio em um case de sucesso.
                                 </p>
                                 <br/>
-
-                                <p class="text-success">Para saber mais detalhes sobre o assunto clique <a
-                                        [routerLink]="['/sobre']"
-                                        aria-label="Para saber mais sobre o assunto clique aqui"
-                                        class="text-warning mt-5"> aqui.</a>
-                                    <a [routerLink]="['/sobre']" aria-hidden="true"
-                                       class="btn btn-success btn-link btn-sm" placement="bottom"
-                                       tooltip="saiba mais...">
-                                        <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
-                                    </a>
                             </div>
                         </div>
                     </div>
@@ -94,7 +84,7 @@
                                         <div class="col-sm-6 text-left">
                                             <hr class="line-primary"/>
                                             <h5 class="card-category"></h5>
-                                            <h2 class="card-title">Serviços</h2>
+                                            <h1 class="card-title">Conheça nossos <span class="text-primary">Serviços</span></h1>
                                         </div>
                                     </div>
                                 </div>
@@ -107,12 +97,22 @@
                                         <div class="icon icon-primary">
                                             <i class="v12-icons icon-globe-2"> </i>
                                         </div>
-                                        <h4 [routerLink]="['/servicos/websites']" class="info-title-link">WEBSITES</h4>
+                                        <h4 [routerLink]="['/servicos/websites']" class="info-title-link">DESENVOLVIMENTO E CRIAÇÃO DE WEBSITES</h4>
                                         <hr class="line-primary"/>
                                         <p>
                                             Desenvolvimento de websites responsivos e confiáveis com foco em conversão e
                                             experiência de usuários.
                                         </p>
+                                    </div>
+                                    <div class="float-right btn-wrapper mb-3">
+                                        <a [routerLink]="['/servicos/websites']"
+                                           tooltip="Saiba mais..."
+                                           aria-label="para saber mais sobre criação e desenvolvimento de websites clique aqui."
+                                           class="category text-success d-inline mr-1">saiba mais</a>
+                                        <a [routerLink]="['/servicos/websites']" aria-hidden="true"
+                                           class="btn btn-success btn-link btn-sm" placement="bottom" tooltip="Saiba mais...">
+                                            <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -120,7 +120,7 @@
                                         <div class="icon icon-warning">
                                             <i class="v12-icons icon-cart"> </i>
                                         </div>
-                                        <h4 [routerLink]="['/servicos/ecommerce']" class="info-title-link">LOJAS
+                                        <h4 [routerLink]="['/servicos/ecommerce']" class="info-title-link">DESENVOLVIMENTO E CRIAÇÃO DE LOJAS
                                             VIRTUAIS</h4>
                                         <hr class="line-warning"/>
                                         <p>
@@ -128,18 +128,38 @@
                                             do plano de negócios para a operação online.
                                         </p>
                                     </div>
+                                    <div class="float-right btn-wrapper mb-3">
+                                        <a [routerLink]="['/servicos/ecommerce']"
+                                           tooltip="Saiba mais..."
+                                           aria-label="para saber mais sobre desenvolvimento de lojas virtuais clique aqui."
+                                           class="category text-success d-inline mr-1">saiba mais</a>
+                                        <a [routerLink]="['/servicos/ecommerce']" aria-hidden="true"
+                                           class="btn btn-success btn-link btn-sm" placement="bottom" tooltip="Saiba mais...">
+                                            <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="info">
                                         <div class="icon icon-success">
                                             <i class="v12-icons icon-chart-bar-32"> </i>
                                         </div>
-                                        <h4 [routerLink]="['/servicos/seo']" class="info-title-link">SEO</h4>
+                                        <h4 [routerLink]="['/servicos/seo']" class="info-title-link">SEO - OTIMIZAÇÃO PARA MECÂNISMOS DE BUSCA</h4>
                                         <hr class="line-success"/>
                                         <p>
                                             Posicionar a sua empresa no topo dos mecanismos de pesquisas é o objetivo
                                             das nossas estratégias de SEO.
                                         </p>
+                                    </div>
+                                    <div class="float-right btn-wrapper mb-3">
+                                        <a [routerLink]="['/servicos/seo']"
+                                           tooltip="Saiba mais..."
+                                           aria-label="para saber mais sobre otimização para mecânismos de busca clique aqui."
+                                           class="category text-success d-inline mr-1">saiba mais</a>
+                                        <a [routerLink]="['/servicos/seo']" aria-hidden="true"
+                                           class="btn btn-success btn-link btn-sm" placement="bottom" tooltip="Saiba mais...">
+                                            <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
