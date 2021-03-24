@@ -4,12 +4,13 @@ import {Title} from '@angular/platform-browser';
 import {Router, NavigationEnd, ActivatedRoute} from '@angular/router';
 import {filter, map} from 'rxjs/operators';
 import {AnalyticsService} from './services/analytics.service';
+import {SendEmailService} from './services/send-email.service';
 import {environment} from '../environments/environment';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
     isBrowser: boolean;
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
         private renderer: Renderer2,
         @Inject(DOCUMENT) document,
         private analytics: AnalyticsService,
+        private sendEmailService: SendEmailService,
         // tslint:disable-next-line:no-shadowed-variable
         private router: Router,
         private activatedRoute: ActivatedRoute,

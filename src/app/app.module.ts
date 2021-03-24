@@ -1,6 +1,6 @@
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -25,6 +25,8 @@ import {BrowserModule, Title} from '@angular/platform-browser';
 import {WhatsappComponent} from './components/whatsapp/whatsapp.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {FundoComponent} from './components/fundo/fundo.component';
+import {FlashMessagesModule} from 'flash-messages-angular';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -39,7 +41,9 @@ import {FundoComponent} from './components/fundo/fundo.component';
         BrowserModule.withServerTransition({appId: 'serverApp'}),
         FontAwesomeModule,
         BrowserAnimationsModule,
+        FlashMessagesModule.forRoot(),
         FormsModule,
+        ReactiveFormsModule,
         HttpClientModule,
         RouterModule,
         AppRoutingModule,

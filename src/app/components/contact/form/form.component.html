@@ -1,0 +1,126 @@
+<section *ngIf="sent == false" class="section section-lg" id="contato">
+  <div class="section">
+    <div class="row row-grid">
+      <div class="col col-md-12 text-center">
+        <form class="form" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+          <div class="col-md-12 form-inline">
+            <div class="col-md-6 input-group p-2" [ngClass]="{ 'input-group-focus': focus === true }">
+              <!--            <div class="input-group-prepend">-->
+              <!--              <div class="input-group-text">-->
+              <!--                <i class="tim-icons icon-single-02"> </i>-->
+              <!--              </div>-->
+              <!--            </div>-->
+              <input
+                id="name"
+                name="name"
+                class="form-control"
+                formControlName="name"
+                required="required"
+                placeholder="Qual é o seu Nome?"
+                type="text"
+                (focus)="focus = true"
+                (blur)="focus = false"
+              />
+            </div>
+            <div class="col-md-6 input-group p-2" [ngClass]="{ 'input-group-focus': focus1 === true }">
+              <!--            <div class="input-group-prepend">-->
+              <!--              <div class="input-group-text">-->
+              <!--                <i class="tim-icons icon-email-85"> </i>-->
+              <!--              </div>-->
+              <!--            </div>-->
+              <input
+                id="email"
+                name="email"
+                formControlName="email"
+                class="form-control"
+                required="required"
+                placeholder="Qual é o seu e-mail?"
+                type="email"
+                (focus)="focus1 = true"
+                (blur)="focus1 = false"
+              />
+            </div>
+            <div class="col-md-6 input-group p-2" [ngClass]="{ 'input-group-focus': focus2 === true }">
+              <!--            <div class="input-group-prepend">-->
+              <!--              <div class="input-group-text">-->
+              <!--                <i class="tim-icons icon-email-85"> </i>-->
+              <!--              </div>-->
+              <!--            </div>-->
+              <input
+                id="telephone"
+                formControlName="telephone"
+                name="telephone"
+                class="form-control"
+                required="required"
+                placeholder="Qual o seu telefone?"
+                type="tel"
+                (focus)="focus2 = true"
+                (blur)="focus2 = false"
+              />
+            </div>
+            <div class="col-md-6 input-group p-2" [ngClass]="{ 'input-group-focus': focus3 === true }">
+              <!--            <div class="input-group-prepend">-->
+              <!--              <div class="input-group-text">-->
+              <!--                <i class="tim-icons icon-email-85"> </i>-->
+              <!--              </div>-->
+              <!--            </div>-->
+              <input
+                id="website"
+                formControlName="website"
+                name="website"
+                class="form-control"
+                placeholder="Qual o seu site?"
+                type="tel"
+                (focus)="focus3 = true"
+                (blur)="focus3 = false"
+              />
+            </div>
+<!--            <div class="col-md-12 input-group p-2" [ngClass]="{ 'input-group-focus': focus4 === true }">-->
+<!--              &lt;!&ndash;            <div class="input-group-prepend">&ndash;&gt;-->
+<!--              &lt;!&ndash;              <div class="input-group-text">&ndash;&gt;-->
+<!--              &lt;!&ndash;                <i class="tim-icons icon-email-85"> </i>&ndash;&gt;-->
+<!--              &lt;!&ndash;              </div>&ndash;&gt;-->
+<!--              &lt;!&ndash;            </div>&ndash;&gt;-->
+<!--              <select-->
+<!--                id="investment"-->
+<!--                name="investment"-->
+<!--                class="form-control"-->
+<!--                required="required"-->
+<!--                placeholder="Quanto quer investir?"-->
+<!--                (focus)="focus4 = true"-->
+<!--                (blur)="focus4 = false"-->
+<!--              >-->
+<!--                <option disabled="disabled" selected="selected">Quanto gostaria de investir?</option>-->
+<!--                <option value="3000-5000">3000 a 5000</option>-->
+<!--                <option value="5000-10000">5000 a 10000</option>-->
+<!--                <option value="10000+">10000 ou mais</option>-->
+<!--              </select>-->
+<!--            </div>-->
+          </div>
+          <div class="col-md-12 input-group" [ngClass]="{ 'input-group-focus': focus5 === true }">
+<!--                        <div class="input-group-prepend">-->
+<!--                          <div class="input-group-text">-->
+<!--                            <i class="tim-icons icon-lock-circle"> </i>-->
+<!--                          </div>-->
+<!--                        </div>-->
+            <textarea
+              id="message"
+              name="message"
+              formControlName="message"
+              class="form-control"
+              required="required"
+              placeholder="O que gostaria de nos escrever?"
+              (focus)="focus5 = true"
+              (blur)="focus5 = false"
+            >
+            </textarea>
+          </div>
+          <div class="col col-md-12">
+            <button type="submit" class="btn btn-primary float-right" [disabled]="!FormData.valid">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<flash-messages></flash-messages>

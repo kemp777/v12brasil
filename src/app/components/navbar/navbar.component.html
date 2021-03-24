@@ -39,43 +39,46 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item p-0">
-                    <a class="nav-link" aria-controls="menuitem" aria-label="Home" [routerLink]="['']"> Início </a>
+                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Home" [routerLink]="['']"> Início </a>
                 </li>
                 <li class="nav-item p-0">
-                    <a class="nav-link" aria-controls="menuitem" aria-label="About" [routerLink]="['/sobre']"> Sobre </a>
+                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="About" [routerLink]="['/sobre']"> Sobre </a>
                 </li>
                 <li class="nav-item p-0">
-                    <a class="nav-link" aria-controls="menuitem" aria-label="Services" [routerLink]="['/servicos']"> Serviços </a>
+                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Services" [routerLink]="['/servicos']"> Serviços </a>
+                </li>
+                <li class="nav-item p-0">
+                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Contact" [routerLink]="['.']" fragment="contato"> Contato </a>
                 </li>
             </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item p-0">
-                    <a
-                            aria-controls="menuitem"
-                            aria-label="Twitter"
-                            class="nav-link nav-link-twitter"
-                            href="https://twitter.com/V12Brasil"
-                            placement="bottom"
-                            target="_blank"
-                            tooltip="Nos siga no Twitter"
-                    >
-                        <fa-icon class="fab" [icon]="faTwitterSquare" [class]="faTwitterSquare"></fa-icon>
-                    </a>
-                </li>
-                <li class="nav-item p-0">
-                    <a
-                            aria-controls="menuitem"
-                            aria-label="Facebook"
-                            class="nav-link nav-link-facebook"
-                            href="https://www.facebook.com/V12Brasil"
-                            placement="bottom"
-                            target="_blank"
-                            tooltip="Nos siga no Facebook"
-                    >
-                        <fa-icon class="fab" [icon]="faFacebookSquare" [class]="faFacebookSquare"></fa-icon>
-                    </a>
-                </li>
-            </ul>
+<!--            <ul class="navbar-nav">-->
+<!--                <li class="nav-item p-0">-->
+<!--                    <a-->
+<!--                            aria-controls="menuitem"-->
+<!--                            aria-label="Twitter"-->
+<!--                            class="nav-link nav-link-twitter"-->
+<!--                            href="https://twitter.com/V12Brasil"-->
+<!--                            placement="bottom"-->
+<!--                            target="_blank"-->
+<!--                            tooltip="Nos siga no Twitter"-->
+<!--                    >-->
+<!--                        <fa-icon class="fab" [icon]="faTwitterSquare" [class]="faTwitterSquare"></fa-icon>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item p-0">-->
+<!--                    <a-->
+<!--                            aria-controls="menuitem"-->
+<!--                            aria-label="Facebook"-->
+<!--                            class="nav-link nav-link-facebook"-->
+<!--                            href="https://www.facebook.com/V12Brasil"-->
+<!--                            placement="bottom"-->
+<!--                            target="_blank"-->
+<!--                            tooltip="Nos siga no Facebook"-->
+<!--                    >-->
+<!--                        <fa-icon class="fab" [icon]="faFacebookSquare" [class]="faFacebookSquare"></fa-icon>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
         </div>
     </div>
 </nav>
