@@ -43,6 +43,11 @@
       outline: 0 none;
   }
 }
+
+.white-overlay {
+  background: white;
+  opacity: 0.25;
+}
 @keyframes shake-whatsapp {
   10%, 90% {
     transform: translate3d(5%, 0, 0);
