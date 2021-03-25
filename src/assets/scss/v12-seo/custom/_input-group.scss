@@ -191,7 +191,7 @@ textarea.form-control {
   resize: none;
   border: none;
   border-bottom: 1px solid lighten($black, 5%);
-  border-radius: 0;
+  border-radius: 8px !important;
   line-height: 2;
 
   &:focus,
