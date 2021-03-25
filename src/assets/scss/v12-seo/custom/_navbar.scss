@@ -22,8 +22,9 @@
       color: inherit;
       line-height: 20px;
       display: inline-flex;
+      transition: 0.5s;
       &:hover {
-        color: $opacity-8;
+        color: $success;
       }
     }
   }

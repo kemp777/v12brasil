@@ -28,8 +28,12 @@
     font-size: $font-size-sm;
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 20px;
+    display: inline-flex;
+    transition: 0.5s;
 
     &:hover {
+      color: $success;
       text-decoration: none;
     }
   }
