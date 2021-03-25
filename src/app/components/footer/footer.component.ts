@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import { faFacebook, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import {WhatsappComponent} from '../whatsapp/whatsapp.component';
+import {WhatsappService} from '../../services/whatsapp.service';
+import {AnalyticsService} from '../../services/analytics.service';
 
 @Component({
     selector: 'app-footer',
@@ -10,4 +11,9 @@ export class FooterComponent {
     public faFacebook = faFacebook;
     public faTwitter = faTwitter;
     public faWhasapp = faWhatsapp;
+
+    constructor(
+        public analytics: AnalyticsService,
+        public whatsapp: WhatsappService
+    ){}
 }

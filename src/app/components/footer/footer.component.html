@@ -11,22 +11,32 @@
                             <a class="nav-link" [routerLink]="['']"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/servicos']"> Serviços </a>
+                            <a class="nav-link" [routerLink]="['/sobre']">
+                                Sobre a V12
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [href]="this.whatsapp.url" (click)="this.analytics.emmitEvent('whatsApp', 'Social', 'engagement', 'Tentativa de contato por Whatsapp')" target="_blank" fragment="contato">
+                                Entre em contato
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/sobre']">
-                                Sobre a V12
-                            </a>
+                            <a class="nav-link" [routerLink]="['/servicos']"> Serviços </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['.']" fragment="contato">
-                                Entre em contato
-                            </a>
+                            <a class="nav-link" [routerLink]="['/servicos/criacao-e-desenvolvimento-de-websites']"> Criação de Websites </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['/servicos/agencia-ecommerce-criacao-de-loja-virtual']"> Lojas Virtuais </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['/servicos/agencia-especializada-em-seo-marketing']"> SEO </a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="col-md-3">
