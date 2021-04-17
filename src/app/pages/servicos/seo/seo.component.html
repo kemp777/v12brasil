@@ -12,10 +12,10 @@
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-md-12">
-            <h1 class="text-white text-center">
+            <h1 i18n="@@seo-componente-titulo-1" class="text-white text-center">
               Apareça na primeira página do Google!
             </h1>
-            <h4 class="text-white text-center">
+            <h4 i18n="@@seo-componente-subtitulo-1" class="text-white text-center">
               Para ser destaque na web não basta ter um website, é necessário que ele esteja bem posicionado nos
               mecanismos de busca.
             </h4>
@@ -26,12 +26,12 @@
             <img alt="Agência de Marketing Digital & SEO" class="img-fluid" src="assets/img/toprank.svg"/>
           </div>
           <div class="col-lg-6 col-md-6 text-right align-self-center">
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-paragrafo-1" class="text-white font-size-md mb-3">
               Colocar sua empresa no topo das pesquisas é o objetivo das nossas
               estratégias de SEO e não importa se você já tem um website, uma
               loja virtual ou se deseja começar do zero!
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-paragrafo-2" class="text-white font-size-md mb-3">
               Do inglês: Search Engine Optimization (SEO), o conceito engloba as técnicas de otimização de
               sites que garantem visibilidade nos mecanismos de busca.
             </p>
@@ -49,7 +49,7 @@
                   <div class="col-sm-6 text-left">
                     <hr class="line-primary"/>
                     <h5 class="card-category"></h5>
-                    <h2 class="card-title">E como nós fazemos isso?</h2>
+                    <h2 i18n="@@seo-componente-titulo-3" class="card-title">E como nós fazemos isso?</h2>
                   </div>
                 </div>
               </div>
@@ -62,17 +62,26 @@
                   <div class="icon icon-primary">
                     <i class="v12-icons icon-molecule-40"> </i>
                   </div>
-                  <h4 class="info-title">Análise detalhada do seu negócio</h4>
+                  <h4 i18n="@@seo-componente-analise-topico-titulo" class="info-title">Análise detalhada do seu negócio</h4>
                   <hr class="line-primary"/>
-                  <p>
+                  <p i18n="@@seo-componente-analise-topico-paragrafo">
                     O primeiro passo que determinará o sucesso da otimização e o posicionamento
                     de seu site no Google.
                   </p>
                 </div>
                 <div class="btn-wrapper mb-3">
-                  <a class="category text-success d-inline mr-1" [routerLink]="['.']" fragment="analise">saiba mais</a>
-                  <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="analise" placement="bottom"
-                     tooltip="saiba mais...">
+                  <a i18n="@@seo-componente-analise-topico-saiba-mais"
+                     class="category text-success d-inline mr-1"
+                     [routerLink]="['.']"
+                     fragment="analise">
+                    saiba mais
+                  </a>
+                  <a class="btn btn-success btn-link btn-sm"
+                     [routerLink]="['.']"
+                     fragment="analise"
+                     placement="bottom"
+                     tooltip="saiba mais..."
+                  >
                     <i class="v12-icons icon-minimal-right"> </i>
                   </a>
                 </div>
@@ -82,18 +91,27 @@
                   <div class="icon icon-warning">
                     <i class="v12-icons icon-key-25"> </i>
                   </div>
-                  <h4 class="info-title">Pesquisa de palavras-chave</h4>
+                  <h4 i18n="@@seo-componente-palavra-chave-topico-titulo" class="info-title">Pesquisa de palavras-chave</h4>
                   <hr class="line-warning"/>
-                  <p>
+                  <p i18n="@@seo-componente-palavra-chave-topico-paragrafo">
                     Estudo e definição das principais palavras chave (keywords) que serão colocadas em seu site e
                     monitoradas.
                   </p>
                 </div>
                 <div class="btn-wrapper mb-3">
-                  <a class="category text-success d-inline mr-1" [routerLink]="['.']" fragment="palavra-chave">saiba
-                    mais</a>
-                  <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="palavra-chave"
-                     placement="bottom" tooltip="saiba mais...">
+                  <a i18n="@@seo-componente-palavra-chave-topico-saiba-mais"
+                     class="category text-success d-inline mr-1"
+                     [routerLink]="['.']"
+                     fragment="palavra-chave"
+                  >
+                    saiba mais
+                  </a>
+                  <a class="btn btn-success btn-link btn-sm"
+                     [routerLink]="['.']"
+                     fragment="palavra-chave"
+                     placement="bottom"
+                     tooltip="saiba mais..."
+                  >
                     <i class="v12-icons icon-minimal-right"> </i>
                   </a>
                 </div>
@@ -103,18 +121,26 @@
                   <div class="icon icon-success">
                     <i class="v12-icons icon-minimal-up"> </i>
                   </div>
-                  <h4 class="info-title">Otimização on-page e off-page</h4>
+                  <h4 i18n="@@seo-componente-otimizacao-topico-titulo" class="info-title">Otimização on-page e off-page</h4>
                   <hr class="line-success"/>
-                  <p>
+                  <p i18n="@@seo-componente-otimizacao-topico-paragrafo">
                     Otimização do seu site seguindo as diretrizes do Google e utilizando as palavras chave previamente
                     definidas.
                   </p>
                 </div>
                 <div class="btn-wrapper mb-3">
-                  <a class="category text-success d-inline mr-1" [routerLink]="['.']" fragment="otimizacao">saiba
-                    mais</a>
-                  <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="otimizacao"
-                     placement="bottom" tooltip="saiba mais...">
+                  <a i18n="@@seo-componente-otimizacao-topico-saiba-mais"
+                     class="category text-success d-inline mr-1"
+                     [routerLink]="['.']"
+                     fragment="otimizacao"
+                  >
+                    saiba mais
+                  </a>
+                  <a class="btn btn-success btn-link btn-sm"
+                     [routerLink]="['.']"
+                     fragment="otimizacao"
+                     placement="bottom" tooltip="saiba mais..."
+                  >
                     <i class="v12-icons icon-minimal-right"> </i>
                   </a>
                 </div>
@@ -124,18 +150,27 @@
                   <div class="icon icon-danger">
                     <i class="v12-icons icon-book-bookmark"> </i>
                   </div>
-                  <h4 class="info-title">Acompanhamento</h4>
+                  <h4 i18n="@@seo-componente-acompanhamento-topico-titulo" class="info-title">Acompanhamento</h4>
                   <hr class="line-danger"/>
-                  <p>
+                  <p i18n="@@seo-componente-acompanhamento-paragrafo">
                     Através de relatórios semanais e mensais conseguimos analisar profundamente a otimização do SEO e
                     propor melhorias.
                   </p>
                 </div>
                 <div class="btn-wrapper mb-3">
-                  <a class="category text-success d-inline mr-1" [routerLink]="['.']" fragment="acompanhamento">saiba
-                    mais</a>
-                  <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="acompanhamento"
-                     placement="bottom" tooltip="saiba mais...">
+                  <a i18n="@@seo-componente-acompanhamento-saiba-mais"
+                     class="category text-success d-inline mr-1"
+                     [routerLink]="['.']"
+                     fragment="acompanhamento"
+                  >
+                    saiba mais
+                  </a>
+                  <a class="btn btn-success btn-link btn-sm"
+                     [routerLink]="['.']"
+                     fragment="acompanhamento"
+                     placement="bottom"
+                     tooltip="saiba mais..."
+                  >
                     <i class="v12-icons icon-minimal-right"> </i>
                   </a>
                 </div>
@@ -149,25 +184,29 @@
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-md-12">
-            <h1 class="text-white">
+            <h1 i18n="@@seo-componente-analise-negocio-titulo" class="text-white">
               Análise do seu negócio
             </h1>
           </div>
         </div>
         <div class="row row-grid justify-content-between">
           <div class="col-lg-6 col-md-6">
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-analise-negocio-paragrafo-1" class="text-white font-size-md mb-3">
               O primeiro passo para colocarmos o seu website ou loja virtual nas primeiras páginas do Google,
               é fazer uma análise detalhada do seu negócio, que inclui: seu público alvo, a relevância das
               palavras a serem utilizadas, a densidade das palavras, e não somente isso, aliamos a experiência
               de muitos anos como uma agência de marketing digital ao conhecimento de profissionais experts no assunto.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-analise-negocio-paragrafo-2" class="text-white font-size-md mb-3">
               Nosso objetivo final é atrair mais clientes e aumentar suas vendas ou visitas.
             </p>
             <div class="btn-wrapper mb-3">
-              <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="inicio-seo" placement="bottom"
-                 tooltip="subir para o topo da página ˆ">
+              <a class="btn btn-success btn-link btn-sm"
+                 [routerLink]="['.']"
+                 fragment="inicio-seo"
+                 placement="bottom"
+                 tooltip="subir para o topo da página ˆ"
+              >
                 <i class="v12-icons icon-minimal-up"> </i>
               </a>
             </div>
@@ -182,7 +221,7 @@
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-md-12">
-            <h1 class="text-white">
+            <h1 i18n="@@seo-componente-palavra-chave-titulo" class="text-white">
               Pesquisa e definição de palavras chave
             </h1>
           </div>
@@ -192,25 +231,29 @@
             <img alt="Agência de Marketing Digital & SEO" class="img-fluid" src="assets/img/keywords.svg"/>
           </div>
           <div class="col-lg-6 col-md-6 text-right">
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-palavra-chave-paragrafo-1" class="text-white font-size-md mb-3">
               Tendo como base a análise feita em seu website, começa o trabalho de definir as palavras mais importantes,
               as keywords, ou palavras chave a serem utilizadas.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-palavra-chave-paragrafo-2" class="text-white font-size-md mb-3">
               Através de ferramentas disponibilizadas pelo Google, conseguimos pesquisar, escolher e definir
               aquelas palavras que farão toda a diferença para o seu negócio aparecer nas primeiras páginas do Google.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-palavra-chave-paragrafo-3" class="text-white font-size-md mb-3">
               As keywords são escolhidas estratégicamente levando em consideração toda uma inteligência por trás do
               negócio
               e também nossa experiência em posicionamento de SEO.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-palavra-chave-paragrafo-4" class="text-white font-size-md mb-3">
               O tráfego em seu site aumenta e consequentemente suas vendas, leads, cliques e visitas!
             </p>
             <div class="btn-wrapper mb-3">
-              <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="inicio-seo" placement="bottom"
-                 tooltip="subir para o topo da página ˆ">
+              <a class="btn btn-success btn-link btn-sm"
+                 [routerLink]="['.']"
+                 fragment="inicio-seo"
+                 placement="bottom"
+                 tooltip="subir para o topo da página ˆ"
+              >
                 <i class="v12-icons icon-minimal-up"> </i>
               </a>
             </div>
@@ -222,31 +265,35 @@
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-md-12">
-            <h1 class="text-white">
+            <h1 i18n="@@seo-componente-otimizacao-titulo" class="text-white">
               Otimização on-page e off-page
             </h1>
           </div>
         </div>
         <div class="row row-grid justify-content-between">
           <div class="col-lg-6 col-md-6">
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-otimizacao-paragrafo-1" class="text-white font-size-md mb-3">
               Nesta etapa do processo, o seu website ou loja virtual será otimizado utilizando as palavras chave
               que foram definidas previamente.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-otimizacao-paragrafo-2" class="text-white font-size-md mb-3">
               O mecanismo de busca é uma máquina, como um robot, por isso seguimos um método comprovado que “conversa”
               com essa máquina e consequentemente passa a ler essa otimização e começa a mostrar o seu site
               gradativamente
               nas primeiras páginas dos mecanismos de busca.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-otimizacao-paragrafo-3" class="text-white font-size-md mb-3">
               Esse trabalho de otimização, além de ser realizado nos campos relacionados ao SEO, como títulos,
               descrições e meta keywords, é feito também levando em consideração outros elementos como por exemplo
               uma mudança de URL do site, ou até mesmo uma adequação de conteúdo.
             </p>
             <div class="btn-wrapper mb-3">
-              <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="inicio-seo" placement="bottom"
-                 tooltip="subir para o topo da página ˆ">
+              <a class="btn btn-success btn-link btn-sm"
+                 [routerLink]="['.']"
+                 fragment="inicio-seo"
+                 placement="bottom"
+                 tooltip="subir para o topo da página ˆ"
+              >
                 <i class="v12-icons icon-minimal-up"> </i>
               </a>
             </div>
@@ -261,7 +308,7 @@
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-lg-12 col-md-12">
-            <h1 class="text-white">
+            <h1 i18n="@@seo-componente-acompanhamento-titulo" class="text-white">
               Acompanhamento
             </h1>
           </div>
@@ -271,26 +318,30 @@
             <img alt="Agência de Marketing Digital & SEO" class="img-fluid" src="assets/img/follow.svg"/>
           </div>
           <div class="col-lg-6 col-md-6 text-right">
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-acompanhamento-paragrafo-1" class="text-white font-size-md mb-3">
               E aqui chegamos ao tão esperado momento! Ver os relatórios e comprovar o sucesso do trabalho e
               do investimento feito em seu negócio.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-acompanhamento-paragrafo-2" class="text-white font-size-md mb-3">
               Utilizando relatórios como o Google Analytics e o Webmaster Tools, conseguimos fazer uma análise profunda,
               comparando os números de antes da otimização e o crescimento após essa otimização.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-acompanhamento-paragrafo-3" class="text-white font-size-md mb-3">
               Os relatórios são disponibilizados (semanalmente ou mensalmente) para que você possa acompanhar o
               processo,
               entender o que os números significam e tomar decisões baseadas em fatos que trarão mais clientes ao seu
               site ou loja.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@seo-componente-acompanhamento-paragrafo-4" class="text-white font-size-md mb-3">
               Preparado para ver o seu negócio crescer?
             </p>
             <div class="btn-wrapper mb-3">
-              <a class="btn btn-success btn-link btn-sm" [routerLink]="['.']" fragment="inicio-seo" placement="bottom"
-                 tooltip="subir para o topo da página ˆ">
+              <a class="btn btn-success btn-link btn-sm"
+                 [routerLink]="['.']"
+                 fragment="inicio-seo"
+                 placement="bottom"
+                 tooltip="subir para o topo da página ˆ"
+              >
                 <i class="v12-icons icon-minimal-up"> </i>
               </a>
             </div>
@@ -302,7 +353,7 @@
       <div class="container">
         <div class="row row-grid">
           <div class="col-lg-12 col-md-12 text-center">
-            <h4>
+            <h4 i18n="@@seo-componente-texto-encerramento">
               Analisar o seu site não custa nada! Solicite-nos a análise do posicionamento de SEO do seu site
               e saiba o que fazer e como fazer para chegar às primeiras páginas do Google!
             </h4>

@@ -5,13 +5,13 @@
                 <span> <img alt="Agência de Marketing Digital & SEO" width="24px" class="img-fluid" src="assets/img/png-low/v12-brasil-agencia-de-marketing-digital-campinas-small.svg" /> V12 Brasil </span> Marketing Digital & SEO
             </a>
             <button
-                    aria-controls="navigation-index"
-                    aria-label="Toggle navigation"
-                    class="navbar-toggler navbar-toggler"
-                    [attr.aria-expanded]="!isCollapsed"
-                    (click)="isCollapsed = !isCollapsed"
-                    id="navigation"
-                    type="button"
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
             >
                 <span class="navbar-toggler-bar bar1"> </span>
                 <span class="navbar-toggler-bar bar2"> </span>
@@ -24,13 +24,13 @@
                     <div class="col-6 collapse-brand"><a [routerLink]="['.']" tooltip="Designed by V12 Brasil"> V12 Brasil </a></div>
                     <div class="col-6 collapse-close text-right">
                         <button
-                                aria-controls="navigation-index"
-                                aria-label="Toggle navigation"
-                                class="navbar-toggler"
-                                [attr.aria-expanded]="!isCollapsed"
-                                (click)="isCollapsed = !isCollapsed"
-                                id="navigation"
-                                type="button"
+                          aria-controls="navigation-index"
+                          aria-label="Toggle navigation"
+                          class="navbar-toggler"
+                          [attr.aria-expanded]="!isCollapsed"
+                          (click)="isCollapsed = !isCollapsed"
+                          id="navigation"
+                          type="button"
                         >
                             <i class="v12-icons icon-simple-remove"> </i>
                         </button>
@@ -39,18 +39,46 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item p-0">
-                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Home" [routerLink]="['']"> Início </a>
+                    <a i18n="@@navbar-link-inicio" class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Home" [routerLink]="['']"> Início </a>
                 </li>
                 <li class="nav-item p-0">
-                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="About" [routerLink]="['/sobre']"> Sobre </a>
+                    <a i18n="@@navbar-link-sobre" class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="About" [routerLink]="['/about']"> Sobre </a>
                 </li>
                 <li class="nav-item p-0">
-                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Services" [routerLink]="['/servicos']"> Serviços </a>
+                    <a i18n="@@navbar-link-servicos" class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Services" [routerLink]="['/services']"> Serviços </a>
                 </li>
                 <li class="nav-item p-0">
-                    <a class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Contact" [routerLink]="['.']" fragment="contato"> Contato </a>
+                    <a i18n="@@navbar-link-contato" class="nav-link" (click)="isCollapsed = !isCollapsed" aria-controls="menuitem" aria-label="Contact" [routerLink]="['.']" fragment="contato"> Contato </a>
                 </li>
             </ul>
+<!--            <div class="btn-group" dropdown>-->
+<!--                <a id="button-animated" dropdownToggle type="button" class="dropdown-toggle" aria-controls="dropdown-animated">-->
+<!--                    {{this.languageService.dropdownItem}}-->
+<!--                </a>-->
+<!--                <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-animated">-->
+<!--                    <li *ngFor="let locale of this.languageService.localesList" role="menuitem">-->
+<!--                        <a class="dropdown-item" [routerLink]="['/'+locale.code]">{{locale.label}}</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+            <div class="btn-group pl-4 pr-4">
+                <span dropdown>
+                  <a href id="basic-link" (click)="false" dropdownToggle aria-controls="basic-link-dropdown">
+                      <i class="flag-icon flag-icon-{{this.languageService.dropdownItem.flag}}"></i> {{this.languageService.dropdownItem.label}}
+                  </a>
+                    <ul id="basic-link-dropdown" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-animated">
+                        <li *ngFor="let locale of this.languageService.localesList" role="menuitem">
+                            <a class="dropdown-item text-white" [attr.href]="locale.code !== this.languageService.language ? 'http://wwww.v12brasil.com.br/'+locale.code : undefined" [ngClass]="locale.code !== this.languageService.language ? '' : 'disabled'">
+                                <i class="flag-icon flag-icon-{{this.locale.flag}}"></i> {{locale.label}}
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+<!--                <select class="select">-->
+<!--                    <option *ngFor="let locale of this.languageService.localesList" [ngValue]="this.languageService.language"><i class="flag-icon flag-icon-{{locale.flag}}"></i>{{locale.label}}</option>-->
+<!--                </select>-->
+            </div>
+
 <!--            <ul class="navbar-nav">-->
 <!--                <li class="nav-item p-0">-->
 <!--                    <a-->

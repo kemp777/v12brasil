@@ -1,8 +1,9 @@
-import {Component, OnInit, Renderer2, Inject, HostListener} from '@angular/core';
+import {Component, OnInit, Renderer2, Inject, HostListener, Input} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import {faWhatsappSquare, faFacebookSquare, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
+import {LanguageService} from '../../services/language.service';
 
 @Component({
     selector: 'app-navbar',
@@ -17,6 +18,7 @@ export class NavbarComponent implements OnInit {
 
     constructor(
         private renderer: Renderer2,
+        public languageService: LanguageService,
         @Inject(DOCUMENT) document,
         // tslint:disable-next-line:ban-types
         @Inject(PLATFORM_ID) platformId: Object

@@ -46,7 +46,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'sobre',
+        path: 'about',
         component: SobreComponent,
         data: {
             title: 'Sobre a Agência ' + titleBrand + ' especializada em SEO e UX UI design',
@@ -70,7 +70,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicos',
+        path: 'services',
         component: ServicosComponent,
         data: {
             title: 'Serviços de Marketing Digital para empresas - Agência ' + titleBrand,
@@ -94,7 +94,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicos/criacao-e-desenvolvimento-de-websites',
+        path: 'services/websites',
         component: WebsitesComponent,
         data: {
             title: 'Criação e desenvolvimento de Websites em Campinas | Agência V12',
@@ -119,7 +119,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicos/agencia-especializada-em-seo-marketing',
+        path: 'services/seo',
         component: SeoComponent,
         data: {
             title: 'Agência especializada em SEO | V12 Brasil Campinas SP',
@@ -144,7 +144,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicos/agencia-ecommerce-criacao-de-loja-virtual',
+        path: 'services/ecommerce',
         component: EcommerceComponent,
         data: {
             title: 'Ecommerce - Criação de Loja Virtual | Agência V12',
@@ -167,6 +167,7 @@ const routes: Routes = [
             description: 'A V12 Brasil é uma agência de Campinas-SP especializada em criação e desenvolvimento de lojas virtuais, solicite um orçamento ou uma consultoria.'
         }
     },
+    {path: '/pt', redirectTo: '', pathMatch: 'full'},
     {path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 

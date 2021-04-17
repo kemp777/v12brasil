@@ -13,13 +13,23 @@
           "style": "scss"
         }
       },
+      "i18n": {
+        "sourceLocale": {
+          "code": "pt",
+          "baseHref": ""
+        },
+        "locales": {
+          "en-US": "src/locale/messages.en-US.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/v12-seo-angular/browser",
+            "outputPath": "dist/v12-seo-angular/browser/",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "localize": true,
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "allowedCommonJsDependencies": [
@@ -37,7 +47,8 @@
               "src/assets/css/nucleo-icons.css",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/assets/scss/v12-seo.scss",
-              "src/assets/demo/demo.css"
+              "src/assets/demo/demo.css",
+              "node_modules/flag-icon-css/css/flag-icon.min.css"
             ],
             "scripts": []
           },
@@ -66,6 +77,62 @@
                 }
               ]
             }
+          },
+          "pt": {
+            "outputPath": "dist/browser/pt",
+            "baseHref": "/pt/",
+            "fileReplacements": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }
+            ],
+            "optimization": true,
+            "outputHashing": "all",
+            "sourceMap": false,
+            "extractCss": true,
+            "namedChunks": false,
+            "aot": true,
+            "extractLicenses": true,
+            "vendorChunk": false,
+            "buildOptimizer": true,
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }
+            ]
+          },
+          "en-US": {
+            "outputPath": "dist/browser/en-US",
+            "baseHref": "/en-US/",
+            "i18nLocale": "en-US",
+            "i18nFormat": "xlf",
+            "i18nFile": "src/locale/messages.en-US.xlf",
+            "i18nMissingTranslation": "error",
+            "fileReplacements": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }
+            ],
+            "optimization": true,
+            "outputHashing": "all",
+            "sourceMap": false,
+            "extractCss": true,
+            "namedChunks": false,
+            "aot": true,
+            "extractLicenses": true,
+            "vendorChunk": false,
+            "buildOptimizer": true,
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }
+            ]
           }
         },
         "serve": {
@@ -76,6 +143,12 @@
           "configurations": {
             "production": {
               "browserTarget": "v12-seo-angular:build:production"
+            },
+            "pt": {
+              "browserTarget": "v12-seo-angular:build:pt"
+            },
+            "en-US": {
+              "browserTarget": "v12-seo-angular:build:en-US"
             }
           }
         },

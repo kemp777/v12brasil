@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="contato-formulario-titulo" datatype="html">
+        <source> Entre em <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-info&quot;&gt; "/> contato: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contato-endereco" datatype="html">
+        <source> Endereço:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Avenida Francisco Glicério 150 SL 805<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Campinas-SP<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Brasil<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> CEP: 13026-500<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">24,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contato-informacoes" datatype="html">
+        <source> Telefones e Whatsapp:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 19 99811-5055<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> contato@v12brasil.com.br<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Segunda a Sexta das 09h as 18h<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">37,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contato-descricao" datatype="html">
+        <source> Agência de Marketing Digital e Inbound Marketing.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Especializada em SEO e experiência de usuário.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formulario-contato-mensagem" datatype="html">
+        <source>            </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/form/form.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formulario-contato-botao-enviar" datatype="html">
+        <source>Enviar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/form/form.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clientes-componente-titulo" datatype="html">
+        <source>Clientes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/customers/customers.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-link-inicio" datatype="html">
+        <source> Início </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-link-sobre" datatype="html">
+        <source> Sobre a V12 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-link-contato" datatype="html">
+        <source> Entre em contato </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-link-servicos" datatype="html">
+        <source> Serviços </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-sublink-1-servicos" datatype="html">
+        <source> Criação de Websites </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-sublink-2-servicos" datatype="html">
+        <source> Lojas Virtuais </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-sublink-3-servicos" datatype="html">
+        <source> SEO </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-link-inicio" datatype="html">
+        <source> Início </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-link-sobre" datatype="html">
+        <source> Sobre </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-link-servicos" datatype="html">
+        <source> Serviços </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-link-contato" datatype="html">
+        <source> Contato </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whatsapp-button" datatype="html">
+        <source><x id="START_TAG_FA_ICON" ctype="x-fa_icon" equiv-text="&lt;fa-icon class=&quot;fab&quot; [icon]=&quot;faWhatsapp&quot; [class]=&quot;faWhatsapp&quot;&gt;"/><x id="CLOSE_TAG_FA_ICON" ctype="x-fa_icon" equiv-text="&lt;/fa-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/whatsapp/whatsapp.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-cabecalho" datatype="html">
+        <source> Agência de <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-success&quot;&gt; "/> Marketing Digital, <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;text-danger&quot;&gt; "/> SEO, <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;text-warning&quot;&gt; "/> &amp; UX UI <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-1" datatype="html">
+        <source> A V12 Brasil é uma Agência de Marketing Digital full service que tem como objetivo o desenvolvimento completo de projetos e campanhas online, utilizando as melhores estratégias para encontrar a rota de sucesso para o seu negócio. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-2" datatype="html">
+        <source> Focando na análise e pesquisa da Experiência de Usuário é posssível entender melhor como se comportam os visitantes de seu site. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-3" datatype="html">
+        <source> Aplicamos técnicas de UX design para que seus clientes tenham a melhor experiência com seu site ou loja virtual. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-4" datatype="html">
+        <source> A mais de 10 anos ajudamos empresas a crescer online! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-5" datatype="html">
+        <source> O seu crescimento é o nosso crescimento também! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-titulo-servicos" datatype="html">
+        <source>Conheça nossos <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-primary&quot;&gt;"/>Serviços<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> de <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;text-warning&quot;&gt;"/>Marketing Digital<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-subtitulo-websites" datatype="html">
+        <source>Desenvolvimento e criação de websites</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-1-websites" datatype="html">
+        <source> Desenvolvimento de websites responsivos e confiáveis com foco em conversão e experiência de usuários. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-saiba-mais-websites" datatype="html">
+        <source> saiba mais... <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i aria-hidden=&quot;true&quot; class=&quot;v12-icons icon-minimal-right&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-subtitulo-ecommerce" datatype="html">
+        <source>Desenvolvimento e criação de lojas virtuais</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-1-ecommerce" datatype="html">
+        <source> Lojas Virtuais planejadas e desenvolvidas desde a concepção até a adaptação do plano de negócios para a operação online. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-saiba-mais-ecommerce" datatype="html">
+        <source> saiba mais... <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i aria-hidden=&quot;true&quot; class=&quot;v12-icons icon-minimal-right&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-subtitulo-seo" datatype="html">
+        <source>SEO - Otimização para mecânismos de busca</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-paragrafo-1-seo" datatype="html">
+        <source> Posicionar a sua empresa no topo dos mecanismos de pesquisas é o objetivo das nossas estratégias de SEO. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">114,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index-saiba-mais-seo" datatype="html">
+        <source> saiba mais... <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i aria-hidden=&quot;true&quot; class=&quot;v12-icons icon-minimal-right&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-titulo" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-warning&quot;&gt;"/>E-Commerce<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> criação de <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;text-success&quot;&gt;"/>Lojas Virtuais<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-paragrafo-1" datatype="html">
+        <source> Devo investir em uma Loja Virtual? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-paragrafo-2" datatype="html">
+        <source> Se hoje você vende algum produto ou serviço, a resposta é: Sim, você deve investir em uma Loja Virtual. Veja abaixo alguns dados para você entender melhor o porque: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-paragrafo-3" datatype="html">
+        <source> No primeiro semestre de 2017, 25,5 milhões de pessoas concretizaram pelo menos 1 compra online, 10% a mais que em 2016 e a tendência é aumentar em 2018, com estimativas de crescimento de 15% quando comparado com 2017, segundo a Ebit. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">26,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-vantagens-titulo" datatype="html">
+        <source> Vantagens de uma Loja Virtual </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-vantagens-paragrafo-1" datatype="html">
+        <source> A venda de celulares e dispositivos mobile cresceu absurdamente, o mundo está cada dia mais conectado e voltado para o online. Somente este fato já é motivo para um empreendedor antenado investir em uma Loja Virtual, sem contar que sua loja estará aberta 365 dias por ano, 24 horas por dia! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">49,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-vantagens-paragrafo-2" datatype="html">
+        <source> Uma Loja Virtual tem uma série de vantagens, entre elas: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-vantagens-lista-item-1" datatype="html">
+        <source> Custos reduzidos: você não precisa pagar aluguel de imóvel e arcar com custos de energia elétrica, água, manutenção, etc. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-vantagens-lista-item-2" datatype="html">
+        <source> Comodidade: com estilos de vida cada vez mais ocupadas, comprar online e receber na comodidade de casa se torna um diferencial para muitas pessoas. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-vantagens-lista-item-3" datatype="html">
+        <source> Vendas sem limites geográficos: seu produto ou serviço pode chegar a qualquer lugar! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-tecnologias-titulo" datatype="html">
+        <source> Lojas Virtuais em Wordpress e Magento </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-tecnologias-paragrafo" datatype="html">
+        <source> Lojas virtuais pensadas e customizadas para a necessidade de cada cliente e aplicando toda a inteligência que adquirmos em mais de 20 anos.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Estudamos psicologia, comportamento humano e programação neuro linguística e aplicamos os conceitos, para que os usuários tenham a melhor experiência com a loja.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">87,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-titulo" datatype="html">
+        <source>Características</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-chat" datatype="html">
+        <source> Chat Online </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-redes-sociais" datatype="html">
+        <source> Integração com Redes Sociais </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-google-maps" datatype="html">
+        <source> Integração com Google Maps </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">144,145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-modulo-administracao" datatype="html">
+        <source> Módulo Administrativo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-design-responsivo" datatype="html">
+        <source> Design Responsivo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-otimizacao-seo" datatype="html">
+        <source> Otimização para mecanismos de Busca </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">181,182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-relatorios" datatype="html">
+        <source> Acesso a Relatórios Detalhados </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">192,193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ecommerce-componente-caracteristicas-blog" datatype="html">
+        <source> Integração com Blog </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/ecommerce/ecommerce.component.html</context>
+          <context context-type="linenumber">203,204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-titulo-1" datatype="html">
+        <source> Apareça na primeira página do Google! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-subtitulo-1" datatype="html">
+        <source> Para ser destaque na web não basta ter um website, é necessário que ele esteja bem posicionado nos mecanismos de busca. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-paragrafo-1" datatype="html">
+        <source> Colocar sua empresa no topo das pesquisas é o objetivo das nossas estratégias de SEO e não importa se você já tem um website, uma loja virtual ou se deseja começar do zero! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-paragrafo-2" datatype="html">
+        <source> Do inglês: Search Engine Optimization (SEO), o conceito engloba as técnicas de otimização de sites que garantem visibilidade nos mecanismos de busca. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-titulo-3" datatype="html">
+        <source>E como nós fazemos isso?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-analise-topico-titulo" datatype="html">
+        <source>Análise detalhada do seu negócio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-analise-topico-paragrafo" datatype="html">
+        <source> O primeiro passo que determinará o sucesso da otimização e o posicionamento de seu site no Google. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-analise-topico-saiba-mais" datatype="html">
+        <source> saiba mais </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-topico-titulo" datatype="html">
+        <source>Pesquisa de palavras-chave</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-topico-paragrafo" datatype="html">
+        <source> Estudo e definição das principais palavras chave (keywords) que serão colocadas em seu site e monitoradas. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-topico-saiba-mais" datatype="html">
+        <source> saiba mais </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-topico-titulo" datatype="html">
+        <source>Otimização on-page e off-page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-topico-paragrafo" datatype="html">
+        <source> Otimização do seu site seguindo as diretrizes do Google e utilizando as palavras chave previamente definidas. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">127,129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-topico-saiba-mais" datatype="html">
+        <source> saiba mais </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-topico-titulo" datatype="html">
+        <source>Acompanhamento</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-paragrafo" datatype="html">
+        <source> Através de relatórios semanais e mensais conseguimos analisar profundamente a otimização do SEO e propor melhorias. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">156,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-saiba-mais" datatype="html">
+        <source> saiba mais </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">166,167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-analise-negocio-titulo" datatype="html">
+        <source> Análise do seu negócio </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">188,189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-analise-negocio-paragrafo-1" datatype="html">
+        <source> O primeiro passo para colocarmos o seu website ou loja virtual nas primeiras páginas do Google, é fazer uma análise detalhada do seu negócio, que inclui: seu público alvo, a relevância das palavras a serem utilizadas, a densidade das palavras, e não somente isso, aliamos a experiência de muitos anos como uma agência de marketing digital ao conhecimento de profissionais experts no assunto. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">195,199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-analise-negocio-paragrafo-2" datatype="html">
+        <source> Nosso objetivo final é atrair mais clientes e aumentar suas vendas ou visitas. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">201,202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-titulo" datatype="html">
+        <source> Pesquisa e definição de palavras chave </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">225,226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-paragrafo-1" datatype="html">
+        <source> Tendo como base a análise feita em seu website, começa o trabalho de definir as palavras mais importantes, as keywords, ou palavras chave a serem utilizadas. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">235,237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-paragrafo-2" datatype="html">
+        <source> Através de ferramentas disponibilizadas pelo Google, conseguimos pesquisar, escolher e definir aquelas palavras que farão toda a diferença para o seu negócio aparecer nas primeiras páginas do Google. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">239,241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-paragrafo-3" datatype="html">
+        <source> As keywords são escolhidas estratégicamente levando em consideração toda uma inteligência por trás do negócio e também nossa experiência em posicionamento de SEO. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">243,246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-palavra-chave-paragrafo-4" datatype="html">
+        <source> O tráfego em seu site aumenta e consequentemente suas vendas, leads, cliques e visitas! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">248,249</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-titulo" datatype="html">
+        <source> Otimização on-page e off-page </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">269,270</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-paragrafo-1" datatype="html">
+        <source> Nesta etapa do processo, o seu website ou loja virtual será otimizado utilizando as palavras chave que foram definidas previamente. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">276,278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-paragrafo-2" datatype="html">
+        <source> O mecanismo de busca é uma máquina, como um robot, por isso seguimos um método comprovado que “conversa” com essa máquina e consequentemente passa a ler essa otimização e começa a mostrar o seu site gradativamente nas primeiras páginas dos mecanismos de busca. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">280,284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-otimizacao-paragrafo-3" datatype="html">
+        <source> Esse trabalho de otimização, além de ser realizado nos campos relacionados ao SEO, como títulos, descrições e meta keywords, é feito também levando em consideração outros elementos como por exemplo uma mudança de URL do site, ou até mesmo uma adequação de conteúdo. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">286,289</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-titulo" datatype="html">
+        <source> Acompanhamento </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">312,313</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-paragrafo-1" datatype="html">
+        <source> E aqui chegamos ao tão esperado momento! Ver os relatórios e comprovar o sucesso do trabalho e do investimento feito em seu negócio. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">322,324</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-paragrafo-2" datatype="html">
+        <source> Utilizando relatórios como o Google Analytics e o Webmaster Tools, conseguimos fazer uma análise profunda, comparando os números de antes da otimização e o crescimento após essa otimização. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">326,328</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-paragrafo-3" datatype="html">
+        <source> Os relatórios são disponibilizados (semanalmente ou mensalmente) para que você possa acompanhar o processo, entender o que os números significam e tomar decisões baseadas em fatos que trarão mais clientes ao seu site ou loja. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">330,334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-acompanhamento-paragrafo-4" datatype="html">
+        <source> Preparado para ver o seu negócio crescer? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">336,337</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo-componente-texto-encerramento" datatype="html">
+        <source> Analisar o seu site não custa nada! Solicite-nos a análise do posicionamento de SEO do seu site e saiba o que fazer e como fazer para chegar às primeiras páginas do Google! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/seo/seo.component.html</context>
+          <context context-type="linenumber">357,359</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-titulo" datatype="html">
+        <source> Serviços de <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-warning&quot;&gt;"/>Marketing Digital<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;text-primary&quot;&gt; "/> &amp; SEO <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-paragrafo-1" datatype="html">
+        <source> Personalizados para cada cliente. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-paragrafo-2" datatype="html">
+        <source> Estudamos o seu negócio, aplicamos toda a nossa inteligência e oferecemos as soluções que trarão os resultados que você busca e merece! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-websites-titulo" datatype="html">
+        <source>WEBSITES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-websites-paragrafo" datatype="html">
+        <source> Desenvolvimento de websites responsivos e confiáveis com foco em conversão e experiência de usuários. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-websites-saiba-mais" datatype="html">
+        <source> saiba mais... <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;v12-icons icon-minimal-right&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-ecommerce-titulo" datatype="html">
+        <source>LOJAS VIRTUAIS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-ecommerce-paragrafo" datatype="html">
+        <source> Lojas Virtuais planejadas e desenvolvidas desde a concepção até a adaptação do plano de negócios para a operação online. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-ecommerce-saiba-mais" datatype="html">
+        <source> saiba mais... <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;v12-icons icon-minimal-right&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-seo-titulo" datatype="html">
+        <source>SEO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-seo-paragrafo" datatype="html">
+        <source> Posicionar a sua empresa no topo dos mecanismos de pesquisas é o objetivo das nossas estratégias de SEO. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicos-componente-seo-saiba-mais" datatype="html">
+        <source> saiba mais ...<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;v12-icons icon-minimal-right&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/servicos.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-titulo-1" datatype="html">
+        <source> Criação e desenvolvimento de <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-primary&quot;&gt; "/> Websites <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-paragrafo-1" datatype="html">
+        <source> Ter um site é estar presente na Web </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-paragrafo-2" datatype="html">
+        <source> Se o seu negócio ainda não está presente na Internet, então é hora de parar para pensar e avaliar se é chegado o momento de investir na criação de um website que represente a sua marca, os seus produtos e serviços. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-titulo-2" datatype="html">
+        <source> A agência V12 Brasil faz criação de websites em Wordpress e Magento </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-credibilidade-titulo" datatype="html">
+        <source>Credibilidade</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-credibilidade-paragrafo" datatype="html">
+        <source> Ter um website bem planejado e administrado transmite credibilidade, profissionalismo e contribui positivamente para o fortalecimento da sua marca. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-presenca-global-titulo" datatype="html">
+        <source>Presença global</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-presenca-global-paragrafo" datatype="html">
+        <source> Em um mundo cada vez mais conectado e o aumento de usuários com celulares e dispositivo móveis, estar presente na web é mais que fundamental! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">72,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-leads-titulo" datatype="html">
+        <source>Leads</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-leads-paragrafo" datatype="html">
+        <source> Através do seu website é posssível captar informações importantes dos usuários (leads) que acessam o website e transformá-los em futuros clientes. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">85,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-relacionamento-titulo" datatype="html">
+        <source>Relacionamento</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-relacionamento-paragrafo" datatype="html">
+        <source> O website integrado com as redes e mídias sociais aliado à um conteúdo bem feito garantem o bom relacionamento com clientes e futuros clientes. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-exposicao-titulo" datatype="html">
+        <source>Exposição</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-exposicao-paragrafo" datatype="html">
+        <source> Um bom trabalho de SEO, feito por quem realmente entende do assunto, pode garantir que o seu site seja encontrado por quem procura o que você oferece. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-vendas-titulo" datatype="html">
+        <source>Vendas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-vendas-paragrafo" datatype="html">
+        <source> Ter um website ou uma Loja Virtual significa ficar exposto na internet e consequentemente essa exposição irá aumentar as chances de você vender mais. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">128,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-titulo-3" datatype="html">
+        <source> Um tipo de website para cada necessidade </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">143,144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-paragrafo-3" datatype="html">
+        <source> O desenvolvimento de um site é fundamental para o seu crescimento na web e no universo digital. Escolher qual tipo de site é o mais adequado para o seu negócio é tão importante quanto ter o site. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">146,148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-paragrafo-4" datatype="html">
+        <source> O ideal é entrar em contato com uma agência de confiança que irá lhe orientar adequadamente, levando em consideração o seu tipo de negócio, o mercado que você atende e os resultados que você deseja alcançar. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">150,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="websites-componente-paragrafo-5" datatype="html">
+        <source> Estamos à disposição para lhe ajudar a se destacar na web! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/servicos/websites/websites.component.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-titulo" datatype="html">
+        <source> Mais que uma Agência. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger&quot;&gt; "/> Inteligência aplicada aos negócios. <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-paragrafo-1" datatype="html">
+        <source> Somos mais que uma agência full service de Marketing Digital. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-paragrafo-2" datatype="html">
+        <source> Investimos em estudos de Comportamento Humano e aplicamos os conceitos no desenvolvimento completo de projetos e campanhas online. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-paragrafo-3" datatype="html">
+        <source> Partimos de uma análise detalhada do segmento de cada empresa, e identificamos as soluções adequadas para trazer resultados. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-paragrafo-4" datatype="html">
+        <source> Além de toda a inteligência na hora de desenvolver os trabalhos, utilizamos técnicas modernas de gestão de projetos. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-paragrafo-5" datatype="html">
+        <source> Com isso, reduzimos a possibilidade de falhas na operação, garantindo que tudo saia conforme o planejado e dentro do prazo definido. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-missao-titulo" datatype="html">
+        <source>Missão</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-missao-paragrafo" datatype="html">
+        <source> Oferecer soluções completas em marketing e comunicação digital, focadas na criação, posicionamento e gerenciamento de marcas de empresas e instituições na internet. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-visao-titulo" datatype="html">
+        <source>Visão</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-visao-paragrafo" datatype="html">
+        <source> Ser uma agência referência nacional em comunicação digital para seus clientes e para o mercado, além de um exemplo de empresa inovadora, rentável, ágil, comprometida com os resultados, funcional e auto-sustentável. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">72,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-valores-titulo" datatype="html">
+        <source>Valores</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-valores-paragrafo" datatype="html">
+        <source> Inovação, integridade, transparência, foco nos resultados, compromisso e responsabilidade social. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobre-componente-saiba-mais" datatype="html">
+        <source>Clique aqui e conheça nossos <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-primary&quot;&gt;"/>Serviços<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> de <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;text-warning&quot;&gt;"/>Marketing Digital<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/sobre/sobre.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -8,15 +8,15 @@
                 <div class="col-md-3">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['']"> Home </a>
+                            <a i18n="@@footer-link-inicio" class="nav-link" [routerLink]="['']"> Início </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/sobre']">
+                            <a i18n="@@footer-link-sobre" class="nav-link" [routerLink]="['/about']">
                                 Sobre a V12
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [href]="this.whatsapp.url" (click)="this.analytics.emmitEvent('whatsApp', 'Social', 'engagement', 'Tentativa de contato por Whatsapp')" target="_blank" fragment="contato">
+                            <a i18n="@@footer-link-contato" class="nav-link" [href]="this.whatsapp.url" (click)="this.analytics.emmitEvent('whatsApp', 'Social', 'engagement', 'Tentativa de contato por Whatsapp')" target="_blank" fragment="contato">
                                 Entre em contato
                             </a>
                         </li>
@@ -25,16 +25,16 @@
                 <div class="col-md-3">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/servicos']"> Serviços </a>
+                            <a i18n="@@footer-link-servicos" class="nav-link" [routerLink]="['/services']"> Serviços </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/servicos/criacao-e-desenvolvimento-de-websites']"> Criação de Websites </a>
+                            <a i18n="@@footer-sublink-1-servicos" class="nav-link" [routerLink]="['/services/websites']"> Criação de Websites </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/servicos/agencia-ecommerce-criacao-de-loja-virtual']"> Lojas Virtuais </a>
+                            <a i18n="@@footer-sublink-2-servicos" class="nav-link" [routerLink]="['/services/ecommerce']"> Lojas Virtuais </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/servicos/agencia-especializada-em-seo-marketing']"> SEO </a>
+                            <a i18n="@@footer-sublink-3-servicos" class="nav-link" [routerLink]="['/services/seo']"> SEO </a>
                         </li>
 
                     </ul>

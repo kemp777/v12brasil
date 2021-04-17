@@ -4,28 +4,28 @@
       <div class="container">
         <div class="row row-grid justify-content-between">
           <div class="col-lg-6 col-md-6">
-            <h1 class="text-white">
+            <h1 i18n="@@index-cabecalho" class="text-white">
               Agência de <br/>
               <span class="text-success"> Marketing Digital, </span>
               <span class="text-danger"> SEO, </span><br/>
               <span class="text-warning"> & UX UI </span>
             </h1>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@index-paragrafo-1" class="text-white font-size-md mb-3">
               A V12 Brasil é uma Agência de Marketing Digital full service que tem como objetivo o
               desenvolvimento completo de projetos e campanhas online, utilizando as melhores estratégias
               para encontrar a rota de sucesso para o seu negócio.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@index-paragrafo-2" class="text-white font-size-md mb-3">
               Focando na análise e pesquisa da Experiência de Usuário é posssível entender melhor como se
               comportam os visitantes de seu site.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@index-paragrafo-3" class="text-white font-size-md mb-3">
               Aplicamos técnicas de UX design para que seus clientes tenham a melhor experiência com seu site ou loja virtual.
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@index-paragrafo-4" class="text-white font-size-md mb-3">
               A mais de 10 anos ajudamos empresas a crescer online!
             </p>
-            <p class="text-white font-size-md mb-3">
+            <p i18n="@@index-paragrafo-5" class="text-white font-size-md mb-3">
               O seu crescimento é o nosso crescimento também!
             </p>
           </div>
@@ -46,7 +46,7 @@
                   <div class="col-sm-8 text-left">
                     <hr class="line-primary"/>
                     <h5 class="card-category"></h5>
-                    <h1 class="card-title">Conheça nossos <span class="text-primary">Serviços</span>
+                    <h1 i18n="@@index-titulo-servicos" class="card-title">Conheça nossos <span class="text-primary">Serviços</span>
                       de <span class="text-warning">Marketing Digital</span></h1>
                   </div>
                 </div>
@@ -60,16 +60,18 @@
                   <div class="icon icon-primary">
                     <i class="v12-icons icon-globe-2"> </i>
                   </div>
-                  <h4 [routerLink]="['/servicos/criacao-e-desenvolvimento-de-websites']" class="info-title-link">Desenvolvimento e
+                  <h4 i18n="@@index-subtitulo-websites" [routerLink]="['/services/websitess']" class="info-title-link">Desenvolvimento e
                     criação de websites</h4>
                   <hr class="line-primary"/>
-                  <p>
+                  <p i18n="@@index-paragrafo-1-websites">
                     Desenvolvimento de websites responsivos e confiáveis com foco em conversão e
                     experiência de usuários.
                   </p>
                 </div>
                 <div class="float-right btn-wrapper mb-3">
-                  <a [routerLink]="['/servicos/criacao-e-desenvolvimento-de-websites']" aria-hidden="true"
+                  <a [routerLink]="['/services/websites']"
+                     i18n="@@index-saiba-mais-websites"
+                     aria-hidden="true"
                      class="btn btn-success btn-link btn-sm" placement="bottom"
                      tooltip="Saiba mais...">
                     saiba mais... <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
@@ -81,18 +83,20 @@
                   <div class="icon icon-warning">
                     <i class="v12-icons icon-cart"> </i>
                   </div>
-                  <h4 [routerLink]="['/servicos/agencia-ecommerce-criacao-de-loja-virtual']" class="info-title-link">Desenvolvimento e
+                  <h4 i18n="@@index-subtitulo-ecommerce" [routerLink]="['/services/ecommerce']" class="info-title-link">Desenvolvimento e
                     criação de lojas
                     virtuais</h4>
                   <hr class="line-warning"/>
-                  <p>
+                  <p i18n="@@index-paragrafo-1-ecommerce">
                     Lojas Virtuais planejadas e desenvolvidas desde a concepção até a adaptação
                     do plano de negócios para a operação online.
                   </p>
                 </div>
                 <div class="float-right btn-wrapper mb-3">
-                  <a [routerLink]="['/servicos/agencia-ecommerce-criacao-de-loja-virtual']" aria-hidden="true"
+                  <a [routerLink]="['/services/ecommerce']"
+                     aria-hidden="true"
                      class="btn btn-success btn-link btn-sm" placement="bottom"
+                     i18n="@@index-saiba-mais-ecommerce"
                      tooltip="Saiba mais...">
                     saiba mais... <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
                   </a>
@@ -103,17 +107,20 @@
                   <div class="icon icon-success">
                     <i class="v12-icons icon-chart-bar-32"> </i>
                   </div>
-                  <h4 [routerLink]="['/servicos/agencia-especializada-em-seo-marketing']" class="info-title-link">SEO - Otimização para
+                  <h4 i18n="@@index-subtitulo-seo" [routerLink]="['/services/seo']" class="info-title-link">SEO - Otimização para
                     mecânismos de busca</h4>
                   <hr class="line-success"/>
-                  <p>
+                  <p i18n="@@index-paragrafo-1-seo">
                     Posicionar a sua empresa no topo dos mecanismos de pesquisas é o objetivo
                     das nossas estratégias de SEO.
                   </p>
                 </div>
                 <div class="float-right btn-wrapper mb-3">
-                  <a [routerLink]="['/servicos/agencia-especializada-em-seo-marketing']" aria-hidden="true"
-                     class="btn btn-success btn-link btn-sm" placement="bottom"
+                  <a [routerLink]="['/services/seo']"
+                     aria-hidden="true"
+                     class="btn btn-success btn-link btn-sm"
+                     placement="bottom"
+                     i18n="@@index-saiba-mais-seo"
                      tooltip="Saiba mais...">
                     saiba mais... <i aria-hidden="true" class="v12-icons icon-minimal-right"> </i>
                   </a>

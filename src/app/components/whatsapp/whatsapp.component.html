@@ -1,3 +1,3 @@
-<a aria-label="Clique aqui para nos contatar pelo Whatsapp" [href]="this.whatsappService.url" (click)="this.analytics.emmitEvent('whatsApp', 'Social', 'engagement', 'Tentativa de contato por Whatsapp')" class="whatsapp-float" target="_blank">
+<a i18n="@@whatsapp-button" aria-label="Clique aqui para nos contatar pelo Whatsapp" [href]="this.whatsappService.url" (click)="this.analytics.emmitEvent('whatsApp', 'Social', 'engagement', 'Tentativa de contato por Whatsapp')" class="whatsapp-float" target="_blank">
     <fa-icon class="fab" [icon]="faWhatsapp" [class]="faWhatsapp"></fa-icon>
 </a>

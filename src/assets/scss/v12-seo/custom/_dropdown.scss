@@ -35,7 +35,7 @@
       height: 0;
       z-index: 1;
       vertical-align: middle;
-      content: "";
+      content: none !important;
       top: -6px;
       left: 10px;
       right: auto;
@@ -64,7 +64,7 @@
         width: 0;
         height: 0;
         vertical-align: middle;
-        content: "";
+        content: none !important;
         top: auto;
         bottom: -6px;
         right: auto;
@@ -107,7 +107,7 @@
     }
 
     &:after {
-      display: inline-block;
+      display: none;
       position: absolute;
       width: 0;
       height: 0;
@@ -139,7 +139,7 @@
     width: 0;
     height: 0;
     vertical-align: middle;
-    content: "";
+    content: none !important;
     top: -5px;
     left: 10px;
     right: auto;

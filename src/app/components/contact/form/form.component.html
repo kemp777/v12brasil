@@ -11,6 +11,7 @@
               <!--              </div>-->
               <!--            </div>-->
               <input
+                i18n="@@formulario-contato-nome"
                 id="name"
                 name="name"
                 class="form-control"
@@ -29,6 +30,7 @@
               <!--              </div>-->
               <!--            </div>-->
               <input
+                i18n="@@formulario-contato-email"
                 id="email"
                 name="email"
                 formControlName="email"
@@ -47,6 +49,7 @@
               <!--              </div>-->
               <!--            </div>-->
               <input
+                i18n="@@formulario-contato-telefone"
                 id="telephone"
                 formControlName="telephone"
                 name="telephone"
@@ -65,6 +68,7 @@
               <!--              </div>-->
               <!--            </div>-->
               <input
+                i18n="@@formulario-contato-website"
                 id="website"
                 formControlName="website"
                 name="website"
@@ -104,6 +108,7 @@
 <!--                          </div>-->
 <!--                        </div>-->
             <textarea
+              i18n="@@formulario-contato-mensagem"
               id="message"
               name="message"
               formControlName="message"
@@ -116,7 +121,7 @@
             </textarea>
           </div>
           <div class="col col-md-12">
-            <button type="submit" class="btn btn-primary float-right" [disabled]="!FormData.valid">Enviar</button>
+            <button i18n="@@formulario-contato-botao-enviar" type="submit" class="btn btn-primary float-right" [disabled]="!FormData.valid">Enviar</button>
           </div>
         </form>
       </div>

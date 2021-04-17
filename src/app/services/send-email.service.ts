@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 
 @Injectable({
@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SendEmailService {
 
-    constructor(private https: HttpClient) { }
+    constructor(private https: HttpClient) {
+    }
 
     sendEmail(FormData) {
         const uri = '/send-email';
@@ -16,7 +17,7 @@ export class SendEmailService {
             uri,
             FormData,
             {
-                headers:{
+                headers: {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': 'https://localhost:4200',
                     // tslint:disable-next-line:max-line-length

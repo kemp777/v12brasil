@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, Inject, PLATFORM_ID } from '@angular/core';
+import {Component, OnInit, Renderer2, Inject, PLATFORM_ID, Input} from '@angular/core';
 import {DOCUMENT, isPlatformBrowser} from '@angular/common';
 import {Title} from '@angular/platform-browser';
 import {Router, NavigationEnd, ActivatedRoute} from '@angular/router';
@@ -7,6 +7,7 @@ import {AnalyticsService} from './services/analytics.service';
 import {WhatsappService} from './services/whatsapp.service';
 import {SendEmailService} from './services/send-email.service';
 import {environment} from '../environments/environment';
+import {LanguageService} from './services/language.service';
 
 @Component({
     selector: 'app-root',
@@ -17,7 +18,7 @@ export class AppComponent implements OnInit {
     isBrowser: boolean;
     title: string;
     domain: string
-    country: string;
+    lang: string;
     fallBackTitle: string;
 
     constructor(
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit {
         @Inject(DOCUMENT) document,
         private analytics: AnalyticsService,
         private whatsapp: WhatsappService,
+        private languageService: LanguageService,
         private sendEmailService: SendEmailService,
         // tslint:disable-next-line:no-shadowed-variable
         private router: Router,
@@ -36,15 +38,13 @@ export class AppComponent implements OnInit {
         this.isBrowser = isPlatformBrowser(platformId);
         this.fallBackTitle = 'V12 Brasil - Agência de Marketing Digital e Consultoria';
         this.domain = 'https://v12brasil.com.br';
-        this.country = 'pt-br';
-        document.documentElement.lang = this.country;
     }
 
     ngOnInit() {
         if (this.isBrowser) {
             const linkElement = document.createElement('link');
             this.renderer.setAttribute(linkElement, 'rel', 'alternate');
-            this.renderer.setAttribute(linkElement, 'hreflang', this.country);
+            this.renderer.setAttribute(linkElement, 'hreflang', this.languageService.language);
             this.renderer.setAttribute(linkElement, 'href', this.domain);
             this.renderer.appendChild(document.head, linkElement);
 

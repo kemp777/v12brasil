@@ -1,5 +1,5 @@
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
@@ -65,8 +65,13 @@ import {FlashMessagesModule} from 'flash-messages-angular';
         {
             provide: LocationStrategy,
             useClass: PathLocationStrategy
+        },
+        {
+            provide: LOCALE_ID,
+            useValue: 'pt'
         }
     ],
+
     bootstrap: [
         AppComponent
     ]
