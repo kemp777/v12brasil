@@ -21,10 +21,10 @@ export function app(lang: string): express.Express {
   const server = express();
 
   // // DEV
-  const distFolder = join(process.cwd(), `dist/v12-seo-angular/browser/${lang}`);
+  // const distFolder = join(process.cwd(), `dist/v12-seo-angular/browser/${lang}`);
 
   // // PRODUÇÃO
-  // const distFolder = join(process.cwd(), `../browser/${lang}`);
+  const distFolder = join(process.cwd(), `../browser/${lang}`);
 
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index.html';
   server.use(bodyParser.json());
